@@ -16,6 +16,9 @@ from ruamel.yaml import YAML
 import typer
 
 
+FORMAT_READERS = {'csv': pd.read_csv, 'excel': pd.read_excel, 'parquet': pd.read_parquet}
+
+
 class FactoryRDFstatements:
     """Generates RDF statements for a given class.
     """
@@ -257,6 +260,21 @@ class GraphDF:
         odf.columns = map_table.values()
         odf = self.set_df_uuid(odf, class_metadata['colname'], class_metadata['uuid'])
         return odf
+
+
+def read_table(filename: Path, input_format: str, readers: dict[str, Callable]=FORMAT_READERS) -> pd.DataFrame:
+    """AI is creating summary for read_table
+
+    Args:
+        filename (Path): [description]
+        input_format (str): [description]
+        readers (dict[str, Callable], optional): [description]. Defaults to FORMAT_READERS.
+
+    Returns:
+        pd.DataFrame: [description]
+    """
+    assert input_format in readers.keys(), ValueError(f'Input format {input_format} not supported.')
+    return readers[input_format](filename)
 
 
 def get_config_colnames(config: dict[str, Any],
