@@ -15,6 +15,25 @@ import rdflib
 from ruamel.yaml import YAML
 import typer
 
+from rich.progress import (
+    BarColumn,
+    MofNCompleteColumn,
+    Progress,
+    TextColumn,
+    TimeElapsedColumn,
+    TimeRemainingColumn,
+)
+
+# Define custom progress bar
+progress_bar = Progress(
+    TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
+    BarColumn(),
+    MofNCompleteColumn(),
+    TextColumn("•"),
+    TimeElapsedColumn(),
+    TextColumn("•"),
+    TimeRemainingColumn(),
+)
 
 FORMAT_READERS = {'csv': pd.read_csv, 'excel': pd.read_excel, 'parquet': pd.read_parquet}
 
@@ -340,8 +359,8 @@ def parse_ruyaml(filename: str | Path, _typ='safe') -> dict[str, Any]:
 
 def generate_graph(table: pd.DataFrame,
                    struct: dict[str, Any],
-                   bg:rdflib.Graph | None = rdflib.Graph(),
-                   factory: Callable | None = FactoryRDFstatements) -> rdflib.Graph:
+                   bg:rdflib.Graph,
+                   factory: Callable = FactoryRDFstatements) -> rdflib.Graph:
     """AI is creating summary for generate_graph
 
     Args:
@@ -353,14 +372,15 @@ def generate_graph(table: pd.DataFrame,
     """
     gg = GraphDF(table, struct)
     classes = gg.get_classes()
-    for _klass in classes:
-        _name, _config = _klass
-        frs = factory(_name, _config)
-        ids = table[get_config_colnames(_config)].drop_duplicates().to_dict(orient='records')
-        for id in ids:
-            idsl = list(frs(id))
-            for i in idsl:
-                bg.add(i)
+    with progress_bar as p:
+        for _klass in p.track(classes):
+            _name, _config = _klass
+            frs = factory(_name, _config)
+            ids = table[get_config_colnames(_config)].drop_duplicates().to_dict(orient='records')
+            for id in ids:
+                idsl = list(frs(id))
+                for i in idsl:
+                    bg.add(i)
     return bg
 
 
@@ -378,7 +398,7 @@ def main(
     struct = parse_ruyaml(config)
     bg = generate_graph(df, struct, factory=FactoryRDFstatements, bg=rdflib.Graph())
     ofh = bg.serialize(format='turtle')
-    print(ofh)
+    # print(ofh)
 
     sys.exit('Graph created successfully.')
 
