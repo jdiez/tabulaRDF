@@ -413,7 +413,7 @@ def generate_graph(
     """
     gg = GraphDF(table, struct)
     classes = gg.get_classes()
-    with progress_bar as p:
+    with progress_bar as p):
         for _klass in p.track(classes):
             _name, _config = _klass
             frs = factory(_name, _config)
@@ -446,7 +446,7 @@ def main(
     Defaults to turtle serialization.
     """
     import sys
-
+    # track different progress bars. (https://rich.readthedocs.io/en/stable/progress.html#transient-progress)
     df = read_table(table, input_format)
     struct = parse_ruyaml(config)
     bg = generate_graph(df, struct, factory=FactoryRDFstatements, bg=rdflib.Graph())
