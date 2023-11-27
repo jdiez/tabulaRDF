@@ -168,13 +168,13 @@ class FactoryRDFstatements:
     def _resolve_prefix(
         self,
         uri: str,
-        pattern: str = r"^(?P<base>[a-zA-Z]+)?(?P<sep>:)?(?P<namespace>[_a-zA-Z0-9#\/]+)?$",
+        pattern: str = r"^(?P<base>[a-zA-Z]+)?(?P<sep>:)?(?P<namespace>[_a-zA-Z0-9#/]+)?$",
     ) -> str:
         """Metadata prefix resolution _resolve_prefix
 
         Args:
             uri (str): [description]
-            pattern (str, optional): [description]. Defaults to r'(?P<base>[a-zA-Z]+)?(?P<sep>:)?(?P<namespace>\w+)?'.
+            pattern (str, optional): [description]. Defaults to r'(?P<base>[a-zA-Z]+)?(?P<sep>:)?(?P<namespace>[_a-zA-Z0-9#\/]+)?'.
 
         Raises:
             ValueError: [description]
