@@ -7,6 +7,7 @@ import re
 import uuid
 from functools import partial
 from pathlib import Path
+import warnings
 
 import pandas as pd
 import rdflib
@@ -21,6 +22,11 @@ from rich.progress import (
 )
 from ruamel.yaml import YAML
 from typing_extensions import Annotated, Any, Callable, Generator
+
+
+warnings.resetwarnings()
+warnings.simplefilter('ignore', SyntaxWarning)
+
 
 # Define custom progress bar
 progress_bar = Progress(
@@ -413,7 +419,7 @@ def generate_graph(
     """
     gg = GraphDF(table, struct)
     classes = gg.get_classes()
-    with progress_bar as p):
+    with progress_bar as p:
         for _klass in p.track(classes):
             _name, _config = _klass
             frs = factory(_name, _config)
