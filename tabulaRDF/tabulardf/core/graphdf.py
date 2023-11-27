@@ -174,7 +174,7 @@ class FactoryRDFstatements:
 
         Args:
             uri (str): [description]
-            pattern (str, optional): [description]. Defaults to r'(?P<base>[a-zA-Z]+)?(?P<sep>:)?(?P<namespace>[_a-zA-Z0-9#\/]+)?'.
+            pattern (str, optional): [description]. Defaults to r'(?P<base>[a-zA-Z]+)?(?P<sep>:)?(?P<namespace>[_a-zA-Z0-9#/]+)?'.
 
         Raises:
             ValueError: [description]
