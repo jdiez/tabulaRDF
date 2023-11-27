@@ -458,11 +458,11 @@ def main(
     bg = generate_graph(df, struct, factory=FactoryRDFstatements, bg=rdflib.Graph())
     rdf_output = bg.serialize(format=output_format)
     if output_file is not None:
-        with open(output, "w") as ofh:
+        with open(output_file, "w") as ofh:
             ofh.write(rdf_output)
         sys.exit("Graph created successfully.")
     else:
-        sys.stdout.buffer.write(rdf_output)
+        print(rdf_output)
 
 
 if __name__ == "__main__":
