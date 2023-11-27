@@ -450,7 +450,7 @@ def main(
     df = read_table(table, input_format)
     struct = parse_ruyaml(config)
     bg = generate_graph(df, struct, factory=FactoryRDFstatements, bg=rdflib.Graph())
-    rdf_output = bg.serialize(format="turtle")
+    rdf_output = bg.serialize(format=output_format)
     if output_file is not None:
         with open(output, "w") as ofh:
             ofh.write(rdf_output)
