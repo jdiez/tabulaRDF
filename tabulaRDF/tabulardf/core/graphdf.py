@@ -168,13 +168,13 @@ class FactoryRDFstatements:
     def _resolve_prefix(
         self,
         uri: str,
-        pattern: str = r"^(?P<base>\w+)?(?P<sep>:)?(?P<nspace>[_a-zA-Z0-9#\/]+)?$",
+        pattern: str = r"^(?P<base>[a-zA-Z]+)?(?P<sep>:)?(?P<namespace>[_a-zA-Z0-9#\/]+)?$",
     ) -> str:
-        """AI is creating summary for _resolve_prefix
+        """Metadata prefix resolution _resolve_prefix
 
         Args:
             uri (str): [description]
-            pattern (str, optional): [description]. Defaults to r'(?P<base>\w+)?(?P<sep>:)?(?P<nspace>\w+)?'.
+            pattern (str, optional): [description]. Defaults to r'(?P<base>[a-zA-Z]+)?(?P<sep>:)?(?P<namespace>\w+)?'.
 
         Raises:
             ValueError: [description]
@@ -184,14 +184,14 @@ class FactoryRDFstatements:
         """
         res = re.match(pattern, uri).groupdict()
         match res:
-            case {"base": None, "sep": None, "nspace": None}:
+            case {"base": None, "sep": None, "namespace": None}:
                 return f'{self.prefixes["base"]}'
-            case {"base": str(), "sep": None, "nspace": None}:
+            case {"base": str(), "sep": None, "namespace": None}:
                 return f'{self.prefixes[res["base"]]}'
-            case {"base": None, "sep": str(), "nspace": str()}:
-                return f'{self.prefixes["base"]}{res["nspace"]}'
-            case {"base": str(), "sep": str(), "nspace": str()}:
-                return f'{self.prefixes[res["base"]]}{res["nspace"]}'
+            case {"base": None, "sep": str(), "namespace": str()}:
+                return f'{self.prefixes["base"]}{res["namespace"]}'
+            case {"base": str(), "sep": str(), "namespace": str()}:
+                return f'{self.prefixes[res["base"]]}{res["namespace"]}'
             case _:
                 raise ValueError(f"URI {uri} is not valid.")
 
