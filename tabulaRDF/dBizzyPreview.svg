@@ -1,0 +1,809 @@
+<svg width="1026" height="1033" viewBox="0 0 769.5 774.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="translate(4,3568) scale(1)">
+<title>G</title>
+<polygon fill="transparent" stroke="transparent" points="-4,4 -4,-3568 825,-3568 825,4 -4,4"></polygon>
+<!-- model -->
+<g id="node1" class="node">
+<title>model</title>
+<polygon fill="#232d95" stroke="transparent" points="599,-1116 599,-1134 821,-1134 821,-1116 599,-1116"></polygon>
+<polygon fill="none" stroke="white" points="599,-1116 599,-1134 821,-1134 821,-1116 599,-1116"></polygon>
+<text text-anchor="start" x="602" y="-1123" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">model</text>
+<polygon fill="#404040" stroke="transparent" points="599,-1098 599,-1116 821,-1116 821,-1098 599,-1098"></polygon>
+<polygon fill="none" stroke="white" points="599,-1098 599,-1116 821,-1116 821,-1098 599,-1098"></polygon>
+<text text-anchor="start" x="602" y="-1105" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="617.28" y="-1105" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="624.28" y="-1105" font-family="opensans" font-size="10.00" fill="white"> id CHAR(55</text>
+<polygon fill="#404040" stroke="transparent" points="599,-1080 599,-1098 821,-1098 821,-1080 599,-1080"></polygon>
+<polygon fill="none" stroke="white" points="599,-1080 599,-1098 821,-1098 821,-1080 599,-1080"></polygon>
+<text text-anchor="start" x="601.7" y="-1086" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;model_name CHAR(55) UNIQUE NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="599,-1062 599,-1080 821,-1080 821,-1062 599,-1062"></polygon>
+<polygon fill="none" stroke="white" points="599,-1062 599,-1080 821,-1080 821,-1062 599,-1062"></polygon>
+<text text-anchor="start" x="602" y="-1068" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;model_source VARCHAR(255) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="599,-1044 599,-1062 821,-1062 821,-1044 599,-1044"></polygon>
+<polygon fill="none" stroke="white" points="599,-1044 599,-1062 821,-1062 821,-1044 599,-1044"></polygon>
+<text text-anchor="start" x="602" y="-1050" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;biopsy_site VARCHAR(255)</text>
+<polygon fill="#404040" stroke="transparent" points="599,-1026 599,-1044 821,-1044 821,-1026 599,-1026"></polygon>
+<polygon fill="none" stroke="white" points="599,-1026 599,-1044 821,-1044 821,-1026 599,-1026"></polygon>
+<text text-anchor="start" x="602" y="-1032" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;patient_ethnicity ethnicity</text>
+<polygon fill="#404040" stroke="transparent" points="599,-1008 599,-1026 821,-1026 821,-1008 599,-1008"></polygon>
+<polygon fill="none" stroke="white" points="599,-1008 599,-1026 821,-1026 821,-1008 599,-1008"></polygon>
+<text text-anchor="start" x="602" y="-1014" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;patient_gender gender</text>
+<polygon fill="#404040" stroke="transparent" points="599,-990 599,-1008 821,-1008 821,-990 599,-990"></polygon>
+<polygon fill="none" stroke="white" points="599,-990 599,-1008 821,-1008 821,-990 599,-990"></polygon>
+<text text-anchor="start" x="602" y="-996" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tumor_grade tumor_grade</text>
+<polygon fill="#404040" stroke="transparent" points="599,-972 599,-990 821,-990 821,-972 599,-972"></polygon>
+<polygon fill="none" stroke="white" points="599,-972 599,-990 821,-990 821,-972 599,-972"></polygon>
+<text text-anchor="start" x="602" y="-978" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tumor_stage tumor_stage</text>
+<polygon fill="#404040" stroke="transparent" points="599,-954 599,-972 821,-972 821,-954 599,-954"></polygon>
+<polygon fill="none" stroke="white" points="599,-954 599,-972 821,-972 821,-954 599,-954"></polygon>
+<text text-anchor="start" x="602" y="-960" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tumor_type tumor_type_acronym</text>
+<polygon fill="#404040" stroke="transparent" points="599,-936 599,-954 821,-954 821,-936 599,-936"></polygon>
+<polygon fill="none" stroke="white" points="599,-936 599,-954 821,-954 821,-936 599,-936"></polygon>
+<text text-anchor="start" x="602" y="-942" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tumor_pathology_diagnosis VARCHAR(255)</text>
+<polygon fill="#404040" stroke="transparent" points="599,-918 599,-936 821,-936 821,-918 599,-918"></polygon>
+<polygon fill="none" stroke="white" points="599,-918 599,-936 821,-936 821,-918 599,-918"></polygon>
+<text text-anchor="start" x="602" y="-924" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;treatment_history VARCHAR(255)</text>
+</g>
+<!-- sample -->
+<g id="node2" class="node">
+<title>sample</title>
+<polygon fill="#232d95" stroke="transparent" points="319,-1134 319,-1152 563,-1152 563,-1134 319,-1134"></polygon>
+<polygon fill="none" stroke="white" points="319,-1134 319,-1152 563,-1152 563,-1134 319,-1134"></polygon>
+<text text-anchor="start" x="322" y="-1141" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">sample</text>
+<polygon fill="#404040" stroke="transparent" points="319,-1116 319,-1134 563,-1134 563,-1116 319,-1116"></polygon>
+<polygon fill="none" stroke="white" points="319,-1116 319,-1134 563,-1134 563,-1116 319,-1116"></polygon>
+<text text-anchor="start" x="322" y="-1123" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="337.28" y="-1123" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="344.28" y="-1123" font-family="opensans" font-size="10.00" fill="white"> id CHAR(55</text>
+<polygon fill="#404040" stroke="transparent" points="319,-1098 319,-1116 563,-1116 563,-1098 319,-1098"></polygon>
+<polygon fill="none" stroke="white" points="319,-1098 319,-1116 563,-1116 563,-1098 319,-1098"></polygon>
+<text text-anchor="start" x="322" y="-1104" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sample_name CHAR(55) UNIQUE NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="319,-1080 319,-1098 563,-1098 563,-1080 319,-1080"></polygon>
+<polygon fill="none" stroke="white" points="319,-1080 319,-1098 563,-1098 563,-1080 319,-1080"></polygon>
+<text text-anchor="start" x="322" y="-1087" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="337.28" y="-1087" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="344.28" y="-1087" font-family="opensans" font-size="10.00" fill="white"> model_name CHAR(55)</text>
+<polygon fill="#404040" stroke="transparent" points="319,-1062 319,-1080 563,-1080 563,-1062 319,-1062"></polygon>
+<polygon fill="none" stroke="white" points="319,-1062 319,-1080 563,-1080 563,-1062 319,-1062"></polygon>
+<text text-anchor="start" x="322" y="-1068" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;mouse_id VARCHAR(30) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="319,-1044 319,-1062 563,-1062 563,-1044 319,-1044"></polygon>
+<polygon fill="none" stroke="white" points="319,-1044 319,-1062 563,-1062 563,-1044 319,-1044"></polygon>
+<text text-anchor="start" x="322" y="-1050" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tumor_passage VARCHAR(3) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="319,-1026 319,-1044 563,-1044 563,-1026 319,-1026"></polygon>
+<polygon fill="none" stroke="white" points="319,-1026 319,-1044 563,-1044 563,-1026 319,-1026"></polygon>
+<text text-anchor="start" x="322" y="-1032" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;analysis_type analysis_type</text>
+<polygon fill="#404040" stroke="transparent" points="319,-1008 319,-1026 563,-1026 563,-1008 319,-1008"></polygon>
+<polygon fill="none" stroke="white" points="319,-1008 319,-1026 563,-1026 563,-1008 319,-1008"></polygon>
+<text text-anchor="start" x="322" y="-1014" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;batch INTEGER NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="319,-990 319,-1008 563,-1008 563,-990 319,-990"></polygon>
+<polygon fill="none" stroke="white" points="319,-990 319,-1008 563,-1008 563,-990 319,-990"></polygon>
+<text text-anchor="start" x="321.72" y="-996" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tumor_sample_source VARCHAR(255) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="319,-972 319,-990 563,-990 563,-972 319,-972"></polygon>
+<polygon fill="none" stroke="white" points="319,-972 319,-990 563,-990 563,-972 319,-972"></polygon>
+<text text-anchor="start" x="322" y="-978" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sample_biotype biotype</text>
+<polygon fill="#404040" stroke="transparent" points="319,-954 319,-972 563,-972 563,-954 319,-954"></polygon>
+<polygon fill="none" stroke="white" points="319,-954 319,-972 563,-972 563,-954 319,-954"></polygon>
+<text text-anchor="start" x="322" y="-960" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;project_name VARCHAR(255)</text>
+<polygon fill="#404040" stroke="transparent" points="319,-936 319,-954 563,-954 563,-936 319,-936"></polygon>
+<polygon fill="none" stroke="white" points="319,-936 319,-954 563,-954 563,-936 319,-936"></polygon>
+<text text-anchor="start" x="322" y="-942" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;KEY (model_name, sample_biotype)</text>
+</g>
+<!-- sample&#45;&gt;model -->
+<g id="edge1" class="edge">
+<title>sample:model_name-&gt;model:model_name</title>
+<path fill="none" stroke="#5ea54a" d="M563,-1089C575,-1089 580.25,-1089 588.88,-1089"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="589,-1092.5 599,-1089 589,-1085.5 589,-1092.5"></polygon>
+</g>
+<!-- rna_sample_lab_qc -->
+<g id="node3" class="node">
+<title>rna_sample_lab_qc</title>
+<polygon fill="#232d95" stroke="transparent" points="0.5,-1026 0.5,-1044 283.5,-1044 283.5,-1026 0.5,-1026"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-1026 0.5,-1044 283.5,-1044 283.5,-1026 0.5,-1026"></polygon>
+<text text-anchor="start" x="3.5" y="-1033" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">rna_sample_lab_qc</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-1008 0.5,-1026 283.5,-1026 283.5,-1008 0.5,-1008"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-1008 0.5,-1026 283.5,-1026 283.5,-1008 0.5,-1008"></polygon>
+<text text-anchor="start" x="3.5" y="-1015" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="18.78" y="-1015" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="25.78" y="-1015" font-family="opensans" font-size="10.00" fill="white"> id CHAR(55</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-990 0.5,-1008 283.5,-1008 283.5,-990 0.5,-990"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-990 0.5,-1008 283.5,-1008 283.5,-990 0.5,-990"></polygon>
+<text text-anchor="start" x="3.5" y="-997" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="18.78" y="-997" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="25.78" y="-997" font-family="opensans" font-size="10.00" fill="white"> sample_name UNIQUE CHAR(55)</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-972 0.5,-990 283.5,-990 283.5,-972 0.5,-972"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-972 0.5,-990 283.5,-990 283.5,-972 0.5,-972"></polygon>
+<text text-anchor="start" x="3.35" y="-979" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="18.63" y="-979" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="25.63" y="-979" font-family="opensans" font-size="10.00" fill="white"> sample_biotype CHAR(3) CHECK (sample_biotype = 'RNA')</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-954 0.5,-972 283.5,-972 283.5,-954 0.5,-954"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-954 0.5,-972 283.5,-972 283.5,-954 0.5,-954"></polygon>
+<text text-anchor="start" x="3.5" y="-960" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_concentration FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-936 0.5,-954 283.5,-954 283.5,-936 0.5,-936"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-936 0.5,-954 283.5,-954 283.5,-936 0.5,-936"></polygon>
+<text text-anchor="start" x="3.5" y="-942" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_volume FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-918 0.5,-936 283.5,-936 283.5,-918 0.5,-918"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-918 0.5,-936 283.5,-936 283.5,-918 0.5,-918"></polygon>
+<text text-anchor="start" x="3.5" y="-924" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_total_amount FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-900 0.5,-918 283.5,-918 283.5,-900 0.5,-900"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-900 0.5,-918 283.5,-918 283.5,-900 0.5,-900"></polygon>
+<text text-anchor="start" x="3.5" y="-906" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_rin FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-882 0.5,-900 283.5,-900 283.5,-882 0.5,-882"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-882 0.5,-900 283.5,-900 283.5,-882 0.5,-882"></polygon>
+<text text-anchor="start" x="3.5" y="-888" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_extraction_date DATE</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-864 0.5,-882 283.5,-882 283.5,-864 0.5,-864"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-864 0.5,-882 283.5,-882 283.5,-864 0.5,-864"></polygon>
+<text text-anchor="start" x="3.5" y="-870" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_lab_qc lab_qc</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-846 0.5,-864 283.5,-864 283.5,-846 0.5,-846"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-846 0.5,-864 283.5,-864 283.5,-846 0.5,-846"></polygon>
+<text text-anchor="start" x="3.5" y="-852" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lab_provider VARCHAR(30) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-828 0.5,-846 283.5,-846 283.5,-828 0.5,-828"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-828 0.5,-846 283.5,-846 283.5,-828 0.5,-828"></polygon>
+<text text-anchor="start" x="3.5" y="-834" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;provider_rna_conc FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-810 0.5,-828 283.5,-828 283.5,-810 0.5,-810"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-810 0.5,-828 283.5,-828 283.5,-810 0.5,-810"></polygon>
+<text text-anchor="start" x="3.5" y="-816" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;provider_volume FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-792 0.5,-810 283.5,-810 283.5,-792 0.5,-792"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-792 0.5,-810 283.5,-810 283.5,-792 0.5,-792"></polygon>
+<text text-anchor="start" x="3.5" y="-798" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;provider_total_amount FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-774 0.5,-792 283.5,-792 283.5,-774 0.5,-774"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-774 0.5,-792 283.5,-792 283.5,-774 0.5,-774"></polygon>
+<text text-anchor="start" x="3.5" y="-780" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;provider_rin FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-756 0.5,-774 283.5,-774 283.5,-756 0.5,-756"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-756 0.5,-774 283.5,-774 283.5,-756 0.5,-756"></polygon>
+<text text-anchor="start" x="3.5" y="-762" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;provider_qc lab_qc</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-738 0.5,-756 283.5,-756 283.5,-738 0.5,-738"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-738 0.5,-756 283.5,-756 283.5,-738 0.5,-738"></polygon>
+<text text-anchor="start" x="3.5" y="-744" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;provider_data_delivery DATE</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-720 0.5,-738 283.5,-738 283.5,-720 0.5,-720"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-720 0.5,-738 283.5,-738 283.5,-720 0.5,-720"></polygon>
+<text text-anchor="start" x="3.5" y="-726" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;provider_comments TEXT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-702 0.5,-720 283.5,-720 283.5,-702 0.5,-702"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-702 0.5,-720 283.5,-720 283.5,-702 0.5,-702"></polygon>
+<text text-anchor="start" x="3.5" y="-708" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_data_qc lab_qc</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-684 0.5,-702 283.5,-702 283.5,-684 0.5,-684"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-684 0.5,-702 283.5,-702 283.5,-684 0.5,-684"></polygon>
+<text text-anchor="start" x="3.5" y="-690" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_data_qc_reason az_data_qc_reason</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-666 0.5,-684 283.5,-684 283.5,-666 0.5,-666"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-666 0.5,-684 283.5,-684 283.5,-666 0.5,-666"></polygon>
+<text text-anchor="start" x="3.5" y="-672" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;remediation remediation</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-648 0.5,-666 283.5,-666 283.5,-648 0.5,-648"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-648 0.5,-666 283.5,-666 283.5,-648 0.5,-648"></polygon>
+<text text-anchor="start" x="3.5" y="-654" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;jira_ticket_url VARCHAR(60)</text>
+</g>
+<!-- rna_sample_lab_qc&#45;&gt;sample -->
+<g id="edge2" class="edge">
+<title>rna_sample_lab_qc:sample_name-&gt;sample:sample_name</title>
+<path fill="none" stroke="#5ea54a" d="M283,-999C329.64,-999 277.88,-1090.78 309.15,-1105.13"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="308.52,-1108.57 319,-1107 309.83,-1101.69 308.52,-1108.57"></polygon>
+</g>
+<!-- rna_sample_lab_qc&#45;&gt;sample -->
+<g id="edge3" class="edge">
+<title>rna_sample_lab_qc:sample_biotype-&gt;sample:sample_biotype</title>
+<path fill="none" stroke="#5ea54a" d="M283,-981C295,-981 300.25,-981 308.88,-981"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="309,-984.5 319,-981 309,-977.5 309,-984.5"></polygon>
+</g>
+<!-- dna_sample_lab_qc -->
+<g id="node4" class="node">
+<title>dna_sample_lab_qc</title>
+<polygon fill="#232d95" stroke="transparent" points="0.5,-612 0.5,-630 283.5,-630 283.5,-612 0.5,-612"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-612 0.5,-630 283.5,-630 283.5,-612 0.5,-612"></polygon>
+<text text-anchor="start" x="3.5" y="-619" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">dna_sample_lab_qc</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-594 0.5,-612 283.5,-612 283.5,-594 0.5,-594"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-594 0.5,-612 283.5,-612 283.5,-594 0.5,-594"></polygon>
+<text text-anchor="start" x="3.5" y="-601" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="18.78" y="-601" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="25.78" y="-601" font-family="opensans" font-size="10.00" fill="white"> id CHAR(55</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-576 0.5,-594 283.5,-594 283.5,-576 0.5,-576"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-576 0.5,-594 283.5,-594 283.5,-576 0.5,-576"></polygon>
+<text text-anchor="start" x="3.5" y="-583" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="18.78" y="-583" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="25.78" y="-583" font-family="opensans" font-size="10.00" fill="white"> sample_name UNIQUE CHAR(55)</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-558 0.5,-576 283.5,-576 283.5,-558 0.5,-558"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-558 0.5,-576 283.5,-576 283.5,-558 0.5,-558"></polygon>
+<text text-anchor="start" x="3.07" y="-565" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="18.35" y="-565" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="25.35" y="-565" font-family="opensans" font-size="10.00" fill="white"> sample_biotype CHAR(3) CHECK (sample_biotype = 'DNA')</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-540 0.5,-558 283.5,-558 283.5,-540 0.5,-540"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-540 0.5,-558 283.5,-558 283.5,-540 0.5,-540"></polygon>
+<text text-anchor="start" x="3.5" y="-546" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_concentration FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-522 0.5,-540 283.5,-540 283.5,-522 0.5,-522"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-522 0.5,-540 283.5,-540 283.5,-522 0.5,-522"></polygon>
+<text text-anchor="start" x="3.5" y="-528" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_volume FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-504 0.5,-522 283.5,-522 283.5,-504 0.5,-504"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-504 0.5,-522 283.5,-522 283.5,-504 0.5,-504"></polygon>
+<text text-anchor="start" x="3.5" y="-510" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_total_amount FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-486 0.5,-504 283.5,-504 283.5,-486 0.5,-486"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-486 0.5,-504 283.5,-504 283.5,-486 0.5,-486"></polygon>
+<text text-anchor="start" x="3.5" y="-492" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_din FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-468 0.5,-486 283.5,-486 283.5,-468 0.5,-468"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-468 0.5,-486 283.5,-486 283.5,-468 0.5,-468"></polygon>
+<text text-anchor="start" x="3.5" y="-474" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_extraction_date DATE</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-450 0.5,-468 283.5,-468 283.5,-450 0.5,-450"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-450 0.5,-468 283.5,-468 283.5,-450 0.5,-450"></polygon>
+<text text-anchor="start" x="3.5" y="-456" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_lab_qc lab_qc</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-432 0.5,-450 283.5,-450 283.5,-432 0.5,-432"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-432 0.5,-450 283.5,-450 283.5,-432 0.5,-432"></polygon>
+<text text-anchor="start" x="3.5" y="-438" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lab_provider VARCHAR(30) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-414 0.5,-432 283.5,-432 283.5,-414 0.5,-414"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-414 0.5,-432 283.5,-432 283.5,-414 0.5,-414"></polygon>
+<text text-anchor="start" x="3.5" y="-420" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;provider_dna_conc FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-396 0.5,-414 283.5,-414 283.5,-396 0.5,-396"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-396 0.5,-414 283.5,-414 283.5,-396 0.5,-396"></polygon>
+<text text-anchor="start" x="3.5" y="-402" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;provider_volume FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-378 0.5,-396 283.5,-396 283.5,-378 0.5,-378"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-378 0.5,-396 283.5,-396 283.5,-378 0.5,-378"></polygon>
+<text text-anchor="start" x="3.5" y="-384" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;provider_total_amount FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-360 0.5,-378 283.5,-378 283.5,-360 0.5,-360"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-360 0.5,-378 283.5,-378 283.5,-360 0.5,-360"></polygon>
+<text text-anchor="start" x="3.5" y="-366" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;provider_qc lab_qc</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-342 0.5,-360 283.5,-360 283.5,-342 0.5,-342"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-342 0.5,-360 283.5,-360 283.5,-342 0.5,-342"></polygon>
+<text text-anchor="start" x="3.5" y="-348" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;provider_data_delivery DATE</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-324 0.5,-342 283.5,-342 283.5,-324 0.5,-324"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-324 0.5,-342 283.5,-342 283.5,-324 0.5,-324"></polygon>
+<text text-anchor="start" x="3.5" y="-330" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;provider_comments TEXT</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-306 0.5,-324 283.5,-324 283.5,-306 0.5,-306"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-306 0.5,-324 283.5,-324 283.5,-306 0.5,-306"></polygon>
+<text text-anchor="start" x="3.5" y="-312" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_data_qc lab_qc</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-288 0.5,-306 283.5,-306 283.5,-288 0.5,-288"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-288 0.5,-306 283.5,-306 283.5,-288 0.5,-288"></polygon>
+<text text-anchor="start" x="3.5" y="-294" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_data_qc_reason az_data_qc_reason</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-270 0.5,-288 283.5,-288 283.5,-270 0.5,-270"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-270 0.5,-288 283.5,-288 283.5,-270 0.5,-270"></polygon>
+<text text-anchor="start" x="3.5" y="-276" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;remediation remediation</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-252 0.5,-270 283.5,-270 283.5,-252 0.5,-252"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-252 0.5,-270 283.5,-270 283.5,-252 0.5,-252"></polygon>
+<text text-anchor="start" x="3.5" y="-258" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;jira_ticket_url VARCHAR(60)</text>
+</g>
+<!-- dna_sample_lab_qc&#45;&gt;sample -->
+<g id="edge4" class="edge">
+<title>dna_sample_lab_qc:sample_name-&gt;sample:sample_name</title>
+<path fill="none" stroke="#5ea54a" d="M283,-585C337.73,-585 269.79,-1047.62 310.15,-1101.83"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="308.6,-1104.98 319,-1107 312.13,-1098.94 308.6,-1104.98"></polygon>
+</g>
+<!-- dna_sample_lab_qc&#45;&gt;sample -->
+<g id="edge5" class="edge">
+<title>dna_sample_lab_qc:sample_biotype-&gt;sample:sample_biotype</title>
+<path fill="none" stroke="#5ea54a" d="M283,-567C371.56,-567 238.44,-947.74 308.82,-978.97"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="308.51,-982.47 319,-981 309.88,-975.61 308.51,-982.47"></polygon>
+</g>
+<!-- tp_sample_lab_qc -->
+<g id="node5" class="node">
+<title>tp_sample_lab_qc</title>
+<polygon fill="#232d95" stroke="transparent" points="1.5,-216 1.5,-234 282.5,-234 282.5,-216 1.5,-216"></polygon>
+<polygon fill="none" stroke="white" points="1.5,-216 1.5,-234 282.5,-234 282.5,-216 1.5,-216"></polygon>
+<text text-anchor="start" x="4.5" y="-223" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">tp_sample_lab_qc</text>
+<polygon fill="#404040" stroke="transparent" points="1.5,-198 1.5,-216 282.5,-216 282.5,-198 1.5,-198"></polygon>
+<polygon fill="none" stroke="white" points="1.5,-198 1.5,-216 282.5,-216 282.5,-198 1.5,-198"></polygon>
+<text text-anchor="start" x="4.5" y="-205" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="19.78" y="-205" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="26.78" y="-205" font-family="opensans" font-size="10.00" fill="white"> id CHAR(55</text>
+<polygon fill="#404040" stroke="transparent" points="1.5,-180 1.5,-198 282.5,-198 282.5,-180 1.5,-180"></polygon>
+<polygon fill="none" stroke="white" points="1.5,-180 1.5,-198 282.5,-198 282.5,-180 1.5,-180"></polygon>
+<text text-anchor="start" x="4.5" y="-187" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="19.78" y="-187" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="26.78" y="-187" font-family="opensans" font-size="10.00" fill="white"> sample_name UNIQUE CHAR(55)</text>
+<polygon fill="#404040" stroke="transparent" points="1.5,-162 1.5,-180 282.5,-180 282.5,-162 1.5,-162"></polygon>
+<polygon fill="none" stroke="white" points="1.5,-162 1.5,-180 282.5,-180 282.5,-162 1.5,-162"></polygon>
+<text text-anchor="start" x="4.46" y="-169" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="19.74" y="-169" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="26.74" y="-169" font-family="opensans" font-size="10.00" fill="white"> sample_biotype CHAR(3) CHECK (sample_biotype = 'TPX')</text>
+<polygon fill="#404040" stroke="transparent" points="1.5,-144 1.5,-162 282.5,-162 282.5,-144 1.5,-144"></polygon>
+<polygon fill="none" stroke="white" points="1.5,-144 1.5,-162 282.5,-162 282.5,-144 1.5,-144"></polygon>
+<text text-anchor="start" x="4.5" y="-150" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_concentration FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="1.5,-126 1.5,-144 282.5,-144 282.5,-126 1.5,-126"></polygon>
+<polygon fill="none" stroke="white" points="1.5,-126 1.5,-144 282.5,-144 282.5,-126 1.5,-126"></polygon>
+<text text-anchor="start" x="4.5" y="-132" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;micro_bca FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="1.5,-108 1.5,-126 282.5,-126 282.5,-108 1.5,-108"></polygon>
+<polygon fill="none" stroke="white" points="1.5,-108 1.5,-126 282.5,-126 282.5,-108 1.5,-108"></polygon>
+<text text-anchor="start" x="4.5" y="-114" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;area FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="1.5,-90 1.5,-108 282.5,-108 282.5,-90 1.5,-90"></polygon>
+<polygon fill="none" stroke="white" points="1.5,-90 1.5,-108 282.5,-108 282.5,-90 1.5,-90"></polygon>
+<text text-anchor="start" x="4.5" y="-96" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cell_count INTEGER</text>
+<polygon fill="#404040" stroke="transparent" points="1.5,-72 1.5,-90 282.5,-90 282.5,-72 1.5,-72"></polygon>
+<polygon fill="none" stroke="white" points="1.5,-72 1.5,-90 282.5,-90 282.5,-72 1.5,-72"></polygon>
+<text text-anchor="start" x="4.5" y="-78" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sample_prep_sop VARCHAR(100)</text>
+<polygon fill="#404040" stroke="transparent" points="1.5,-54 1.5,-72 282.5,-72 282.5,-54 1.5,-54"></polygon>
+<polygon fill="none" stroke="white" points="1.5,-54 1.5,-72 282.5,-72 282.5,-54 1.5,-54"></polygon>
+<text text-anchor="start" x="4.5" y="-60" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sample_prep_date DATE</text>
+<polygon fill="#404040" stroke="transparent" points="1.5,-36 1.5,-54 282.5,-54 282.5,-36 1.5,-36"></polygon>
+<polygon fill="none" stroke="white" points="1.5,-36 1.5,-54 282.5,-54 282.5,-36 1.5,-36"></polygon>
+<text text-anchor="start" x="4.5" y="-42" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_data_qc lab_qc</text>
+<polygon fill="#404040" stroke="transparent" points="1.5,-18 1.5,-36 282.5,-36 282.5,-18 1.5,-18"></polygon>
+<polygon fill="none" stroke="white" points="1.5,-18 1.5,-36 282.5,-36 282.5,-18 1.5,-18"></polygon>
+<text text-anchor="start" x="4.5" y="-24" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;az_data_qc_reason az_data_qc_reason</text>
+<polygon fill="#404040" stroke="transparent" points="1.5,0 1.5,-18 282.5,-18 282.5,0 1.5,0"></polygon>
+<polygon fill="none" stroke="white" points="1.5,0 1.5,-18 282.5,-18 282.5,0 1.5,0"></polygon>
+<text text-anchor="start" x="4.5" y="-6" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;remediation remediation</text>
+</g>
+<!-- tp_sample_lab_qc&#45;&gt;sample -->
+<g id="edge6" class="edge">
+<title>tp_sample_lab_qc:sample_name-&gt;sample:sample_name</title>
+<path fill="none" stroke="#5ea54a" d="M283,-189C381.49,-189 228.41,-1043.59 309.21,-1103.68"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="308.41,-1107.1 319,-1107 310.66,-1100.47 308.41,-1107.1"></polygon>
+</g>
+<!-- tp_sample_lab_qc&#45;&gt;sample -->
+<g id="edge7" class="edge">
+<title>tp_sample_lab_qc:sample_biotype-&gt;sample:sample_biotype</title>
+<path fill="none" stroke="#5ea54a" d="M283,-171C369.57,-171 239.82,-918.95 309.49,-977.39"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="308.41,-980.72 319,-981 310.89,-974.18 308.41,-980.72"></polygon>
+</g>
+<!-- seq2c -->
+<g id="node6" class="node">
+<title>seq2c</title>
+<polygon fill="#232d95" stroke="transparent" points="38.5,-3546 38.5,-3564 244.5,-3564 244.5,-3546 38.5,-3546"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3546 38.5,-3564 244.5,-3564 244.5,-3546 38.5,-3546"></polygon>
+<text text-anchor="start" x="41.5" y="-3553" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">seq2c</text>
+<polygon fill="#404040" stroke="transparent" points="38.5,-3528 38.5,-3546 244.5,-3546 244.5,-3528 38.5,-3528"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3528 38.5,-3546 244.5,-3546 244.5,-3528 38.5,-3528"></polygon>
+<text text-anchor="start" x="41.5" y="-3535" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="56.78" y="-3535" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="63.78" y="-3535" font-family="opensans" font-size="10.00" fill="white"> id CHAR(55</text>
+<polygon fill="#404040" stroke="transparent" points="38.5,-3510 38.5,-3528 244.5,-3528 244.5,-3510 38.5,-3510"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3510 38.5,-3528 244.5,-3528 244.5,-3510 38.5,-3510"></polygon>
+<text text-anchor="start" x="41.5" y="-3517" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="56.78" y="-3517" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="63.78" y="-3517" font-family="opensans" font-size="10.00" fill="white"> sample_name CHAR(55) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="38.5,-3492 38.5,-3510 244.5,-3510 244.5,-3492 38.5,-3492"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3492 38.5,-3510 244.5,-3510 244.5,-3492 38.5,-3492"></polygon>
+<text text-anchor="start" x="41.5" y="-3499" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="56.78" y="-3499" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="63.78" y="-3499" font-family="opensans" font-size="10.00" fill="white"> model_name CHAR(55) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="38.5,-3474 38.5,-3492 244.5,-3492 244.5,-3474 38.5,-3474"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3474 38.5,-3492 244.5,-3492 244.5,-3474 38.5,-3474"></polygon>
+<text text-anchor="start" x="41.5" y="-3480" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;chromosome VARCHAR(5) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="38.5,-3456 38.5,-3474 244.5,-3474 244.5,-3456 38.5,-3456"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3456 38.5,-3474 244.5,-3474 244.5,-3456 38.5,-3456"></polygon>
+<text text-anchor="start" x="41.5" y="-3462" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;coordinate VARCHAR(30) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="38.5,-3438 38.5,-3456 244.5,-3456 244.5,-3438 38.5,-3438"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3438 38.5,-3456 244.5,-3456 244.5,-3438 38.5,-3438"></polygon>
+<text text-anchor="start" x="41.5" y="-3444" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cnv VARCHAR(30) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="38.5,-3420 38.5,-3438 244.5,-3438 244.5,-3420 38.5,-3420"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3420 38.5,-3438 244.5,-3438 244.5,-3420 38.5,-3420"></polygon>
+<text text-anchor="start" x="41.5" y="-3426" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cnv_segment VARCHAR(30) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="38.5,-3402 38.5,-3420 244.5,-3420 244.5,-3402 38.5,-3402"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3402 38.5,-3420 244.5,-3420 244.5,-3402 38.5,-3402"></polygon>
+<text text-anchor="start" x="41.5" y="-3408" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cnv_type VARCHAR(30) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="38.5,-3384 38.5,-3402 244.5,-3402 244.5,-3384 38.5,-3384"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3384 38.5,-3402 244.5,-3402 244.5,-3384 38.5,-3384"></polygon>
+<text text-anchor="start" x="41.38" y="-3390" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;copy_number VARCHAR(30) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="38.5,-3366 38.5,-3384 244.5,-3384 244.5,-3366 38.5,-3366"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3366 38.5,-3384 244.5,-3384 244.5,-3366 38.5,-3366"></polygon>
+<text text-anchor="start" x="41.5" y="-3372" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;gene VARCHAR(30) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="38.5,-3348 38.5,-3366 244.5,-3366 244.5,-3348 38.5,-3348"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3348 38.5,-3366 244.5,-3366 244.5,-3348 38.5,-3348"></polygon>
+<text text-anchor="start" x="41.5" y="-3354" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;log_ratio DOUBLE</text>
+<polygon fill="#404040" stroke="transparent" points="38.5,-3330 38.5,-3348 244.5,-3348 244.5,-3330 38.5,-3330"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3330 38.5,-3348 244.5,-3348 244.5,-3330 38.5,-3330"></polygon>
+<text text-anchor="start" x="41.5" y="-3336" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;significance significance</text>
+<polygon fill="#404040" stroke="transparent" points="38.5,-3312 38.5,-3330 244.5,-3330 244.5,-3312 38.5,-3312"></polygon>
+<polygon fill="none" stroke="white" points="38.5,-3312 38.5,-3330 244.5,-3330 244.5,-3312 38.5,-3312"></polygon>
+<text text-anchor="start" x="41.5" y="-3318" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;variant_type variant_type</text>
+</g>
+<!-- seq2c&#45;&gt;sample -->
+<g id="edge8" class="edge">
+<title>seq2c:sample_name-&gt;sample:sample_name</title>
+<path fill="none" stroke="#5ea54a" d="M245.5,-3519C342.94,-3519 273.84,-3400 283,-3303 285.76,-3273.82 288.29,-1272.93 315.55,-1116.66"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="318.93,-1117.59 319,-1107 312.34,-1115.24 318.93,-1117.59"></polygon>
+</g>
+<!-- seq2c&#45;&gt;sample -->
+<g id="edge9" class="edge">
+<title>seq2c:model_name-&gt;sample:model_name</title>
+<path fill="none" stroke="#5ea54a" d="M245.5,-3501C335.06,-3501 273.91,-3392.1 283,-3303 286,-3273.6 288.08,-1256.29 315.53,-1098.74"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="318.94,-1099.59 319,-1089 312.34,-1097.24 318.94,-1099.59"></polygon>
+</g>
+<!-- vardict -->
+<g id="node7" class="node">
+<title>vardict</title>
+<polygon fill="#232d95" stroke="transparent" points="29.5,-3276 29.5,-3294 253.5,-3294 253.5,-3276 29.5,-3276"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3276 29.5,-3294 253.5,-3294 253.5,-3276 29.5,-3276"></polygon>
+<text text-anchor="start" x="32.5" y="-3283" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">vardict</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3258 29.5,-3276 253.5,-3276 253.5,-3258 29.5,-3258"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3258 29.5,-3276 253.5,-3276 253.5,-3258 29.5,-3258"></polygon>
+<text text-anchor="start" x="32.5" y="-3265" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="47.78" y="-3265" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="54.78" y="-3265" font-family="opensans" font-size="10.00" fill="white"> id CHAR(55</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3240 29.5,-3258 253.5,-3258 253.5,-3240 29.5,-3240"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3240 29.5,-3258 253.5,-3258 253.5,-3240 29.5,-3240"></polygon>
+<text text-anchor="start" x="32.5" y="-3247" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="47.78" y="-3247" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="54.78" y="-3247" font-family="opensans" font-size="10.00" fill="white"> sample_name CHAR(55) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3222 29.5,-3240 253.5,-3240 253.5,-3222 29.5,-3222"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3222 29.5,-3240 253.5,-3240 253.5,-3222 29.5,-3222"></polygon>
+<text text-anchor="start" x="32.5" y="-3229" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="47.78" y="-3229" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="54.78" y="-3229" font-family="opensans" font-size="10.00" fill="white"> model_name CHAR(55) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3204 29.5,-3222 253.5,-3222 253.5,-3204 29.5,-3204"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3204 29.5,-3222 253.5,-3222 253.5,-3204 29.5,-3204"></polygon>
+<text text-anchor="start" x="32.5" y="-3210" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;chromosome VARCHAR(5) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3186 29.5,-3204 253.5,-3204 253.5,-3186 29.5,-3186"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3186 29.5,-3204 253.5,-3204 253.5,-3186 29.5,-3186"></polygon>
+<text text-anchor="start" x="32.5" y="-3192" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;variant_start INTEGER</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3168 29.5,-3186 253.5,-3186 253.5,-3168 29.5,-3168"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3168 29.5,-3186 253.5,-3186 253.5,-3168 29.5,-3168"></polygon>
+<text text-anchor="start" x="32.5" y="-3174" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;variant_id VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3150 29.5,-3168 253.5,-3168 253.5,-3150 29.5,-3150"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3150 29.5,-3168 253.5,-3168 253.5,-3150 29.5,-3150"></polygon>
+<text text-anchor="start" x="32.5" y="-3156" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ref_sequence VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3132 29.5,-3150 253.5,-3150 253.5,-3132 29.5,-3132"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3132 29.5,-3150 253.5,-3150 253.5,-3132 29.5,-3132"></polygon>
+<text text-anchor="start" x="32.5" y="-3138" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;alt_sequence VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3114 29.5,-3132 253.5,-3132 253.5,-3114 29.5,-3114"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3114 29.5,-3132 253.5,-3132 253.5,-3114 29.5,-3114"></polygon>
+<text text-anchor="start" x="32.5" y="-3120" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;variant_type VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3096 29.5,-3114 253.5,-3114 253.5,-3096 29.5,-3096"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3096 29.5,-3114 253.5,-3114 253.5,-3096 29.5,-3096"></polygon>
+<text text-anchor="start" x="32.5" y="-3102" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;variant_effect VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3078 29.5,-3096 253.5,-3096 253.5,-3078 29.5,-3078"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3078 29.5,-3096 253.5,-3096 253.5,-3078 29.5,-3078"></polygon>
+<text text-anchor="start" x="32.5" y="-3084" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;functional_class VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3060 29.5,-3078 253.5,-3078 253.5,-3060 29.5,-3060"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3060 29.5,-3078 253.5,-3078 253.5,-3060 29.5,-3060"></polygon>
+<text text-anchor="start" x="32.5" y="-3066" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;codon_change VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3042 29.5,-3060 253.5,-3060 253.5,-3042 29.5,-3042"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3042 29.5,-3060 253.5,-3060 253.5,-3042 29.5,-3042"></polygon>
+<text text-anchor="start" x="32.5" y="-3048" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;amino_acid_change VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3024 29.5,-3042 253.5,-3042 253.5,-3024 29.5,-3024"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3024 29.5,-3042 253.5,-3042 253.5,-3024 29.5,-3024"></polygon>
+<text text-anchor="start" x="32.5" y="-3030" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cdna_change VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-3006 29.5,-3024 253.5,-3024 253.5,-3006 29.5,-3006"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-3006 29.5,-3024 253.5,-3024 253.5,-3006 29.5,-3006"></polygon>
+<text text-anchor="start" x="32.5" y="-3012" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;amino_acid_length VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2988 29.5,-3006 253.5,-3006 253.5,-2988 29.5,-2988"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2988 29.5,-3006 253.5,-3006 253.5,-2988 29.5,-2988"></polygon>
+<text text-anchor="start" x="32.5" y="-2994" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;gene VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2970 29.5,-2988 253.5,-2988 253.5,-2970 29.5,-2970"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2970 29.5,-2988 253.5,-2988 253.5,-2970 29.5,-2970"></polygon>
+<text text-anchor="start" x="32.5" y="-2976" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;transcript_biotype VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2952 29.5,-2970 253.5,-2970 253.5,-2952 29.5,-2952"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2952 29.5,-2970 253.5,-2970 253.5,-2952 29.5,-2952"></polygon>
+<text text-anchor="start" x="32.5" y="-2958" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;gene_coding VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2934 29.5,-2952 253.5,-2952 253.5,-2934 29.5,-2934"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2934 29.5,-2952 253.5,-2952 253.5,-2934 29.5,-2934"></polygon>
+<text text-anchor="start" x="32.5" y="-2940" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;transcript VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2916 29.5,-2934 253.5,-2934 253.5,-2916 29.5,-2916"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2916 29.5,-2934 253.5,-2934 253.5,-2916 29.5,-2916"></polygon>
+<text text-anchor="start" x="32.5" y="-2922" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;exon VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2898 29.5,-2916 253.5,-2916 253.5,-2898 29.5,-2898"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2898 29.5,-2916 253.5,-2916 253.5,-2898 29.5,-2898"></polygon>
+<text text-anchor="start" x="32.5" y="-2904" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cosmic_gene VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2880 29.5,-2898 253.5,-2898 253.5,-2880 29.5,-2880"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2880 29.5,-2898 253.5,-2898 253.5,-2880 29.5,-2880"></polygon>
+<text text-anchor="start" x="32.5" y="-2886" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cosmic_cds_change VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2862 29.5,-2880 253.5,-2880 253.5,-2862 29.5,-2862"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2862 29.5,-2880 253.5,-2880 253.5,-2862 29.5,-2862"></polygon>
+<text text-anchor="start" x="32.5" y="-2868" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cosmic_aa_change VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2844 29.5,-2862 253.5,-2862 253.5,-2844 29.5,-2844"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2844 29.5,-2862 253.5,-2862 253.5,-2844 29.5,-2844"></polygon>
+<text text-anchor="start" x="32.5" y="-2850" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cosmic_cnt VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2826 29.5,-2844 253.5,-2844 253.5,-2826 29.5,-2826"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2826 29.5,-2844 253.5,-2844 253.5,-2826 29.5,-2826"></polygon>
+<text text-anchor="start" x="32.5" y="-2832" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;depth VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2808 29.5,-2826 253.5,-2826 253.5,-2808 29.5,-2808"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2808 29.5,-2826 253.5,-2826 253.5,-2808 29.5,-2808"></polygon>
+<text text-anchor="start" x="32.5" y="-2814" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;allelefreq VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2790 29.5,-2808 253.5,-2808 253.5,-2790 29.5,-2790"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2790 29.5,-2808 253.5,-2808 253.5,-2790 29.5,-2790"></polygon>
+<text text-anchor="start" x="32.5" y="-2796" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;bias VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2772 29.5,-2790 253.5,-2790 253.5,-2772 29.5,-2772"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2772 29.5,-2790 253.5,-2790 253.5,-2772 29.5,-2772"></polygon>
+<text text-anchor="start" x="32.5" y="-2778" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;pmean VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2754 29.5,-2772 253.5,-2772 253.5,-2754 29.5,-2754"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2754 29.5,-2772 253.5,-2772 253.5,-2754 29.5,-2754"></polygon>
+<text text-anchor="start" x="32.5" y="-2760" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;pstd VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2736 29.5,-2754 253.5,-2754 253.5,-2736 29.5,-2736"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2736 29.5,-2754 253.5,-2754 253.5,-2736 29.5,-2736"></polygon>
+<text text-anchor="start" x="32.5" y="-2742" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;qual VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2718 29.5,-2736 253.5,-2736 253.5,-2718 29.5,-2718"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2718 29.5,-2736 253.5,-2736 253.5,-2718 29.5,-2718"></polygon>
+<text text-anchor="start" x="32.5" y="-2724" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;qstd VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2700 29.5,-2718 253.5,-2718 253.5,-2700 29.5,-2700"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2700 29.5,-2718 253.5,-2718 253.5,-2700 29.5,-2700"></polygon>
+<text text-anchor="start" x="32.5" y="-2706" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sbf VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2682 29.5,-2700 253.5,-2700 253.5,-2682 29.5,-2682"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2682 29.5,-2700 253.5,-2700 253.5,-2682 29.5,-2682"></polygon>
+<text text-anchor="start" x="32.5" y="-2688" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;gmaf VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2664 29.5,-2682 253.5,-2682 253.5,-2664 29.5,-2664"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2664 29.5,-2682 253.5,-2682 253.5,-2664 29.5,-2664"></polygon>
+<text text-anchor="start" x="32.5" y="-2670" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;vd VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2646 29.5,-2664 253.5,-2664 253.5,-2646 29.5,-2646"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2646 29.5,-2664 253.5,-2664 253.5,-2646 29.5,-2646"></polygon>
+<text text-anchor="start" x="32.5" y="-2652" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rd VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2628 29.5,-2646 253.5,-2646 253.5,-2628 29.5,-2628"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2628 29.5,-2646 253.5,-2646 253.5,-2628 29.5,-2628"></polygon>
+<text text-anchor="start" x="32.5" y="-2634" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;clnsig VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2610 29.5,-2628 253.5,-2628 253.5,-2610 29.5,-2610"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2610 29.5,-2628 253.5,-2628 253.5,-2610 29.5,-2610"></polygon>
+<text text-anchor="start" x="32.5" y="-2616" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cln_gene VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2592 29.5,-2610 253.5,-2610 253.5,-2592 29.5,-2592"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2592 29.5,-2610 253.5,-2610 253.5,-2592 29.5,-2592"></polygon>
+<text text-anchor="start" x="32.5" y="-2598" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;oddratio VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2574 29.5,-2592 253.5,-2592 253.5,-2574 29.5,-2574"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2574 29.5,-2592 253.5,-2592 253.5,-2574 29.5,-2574"></polygon>
+<text text-anchor="start" x="32.5" y="-2580" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;hiaf VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2556 29.5,-2574 253.5,-2574 253.5,-2556 29.5,-2556"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2556 29.5,-2574 253.5,-2574 253.5,-2556 29.5,-2556"></polygon>
+<text text-anchor="start" x="32.5" y="-2562" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;mq VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2538 29.5,-2556 253.5,-2556 253.5,-2538 29.5,-2538"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2538 29.5,-2556 253.5,-2556 253.5,-2538 29.5,-2538"></polygon>
+<text text-anchor="start" x="32.5" y="-2544" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sn VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2520 29.5,-2538 253.5,-2538 253.5,-2520 29.5,-2520"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2520 29.5,-2538 253.5,-2538 253.5,-2520 29.5,-2520"></polygon>
+<text text-anchor="start" x="32.5" y="-2526" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;adjaf VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2502 29.5,-2520 253.5,-2520 253.5,-2502 29.5,-2502"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2502 29.5,-2520 253.5,-2520 253.5,-2502 29.5,-2502"></polygon>
+<text text-anchor="start" x="32.5" y="-2508" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nm VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2484 29.5,-2502 253.5,-2502 253.5,-2484 29.5,-2484"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2484 29.5,-2502 253.5,-2502 253.5,-2484 29.5,-2484"></polygon>
+<text text-anchor="start" x="32.5" y="-2490" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;shift3 VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2466 29.5,-2484 253.5,-2484 253.5,-2466 29.5,-2466"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2466 29.5,-2484 253.5,-2484 253.5,-2466 29.5,-2466"></polygon>
+<text text-anchor="start" x="32.5" y="-2472" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;msi VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2448 29.5,-2466 253.5,-2466 253.5,-2448 29.5,-2448"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2448 29.5,-2466 253.5,-2466 253.5,-2448 29.5,-2448"></polygon>
+<text text-anchor="start" x="32.5" y="-2454" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;gt VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2430 29.5,-2448 253.5,-2448 253.5,-2430 29.5,-2430"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2430 29.5,-2448 253.5,-2448 253.5,-2430 29.5,-2430"></polygon>
+<text text-anchor="start" x="32.5" y="-2436" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;duprate VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2412 29.5,-2430 253.5,-2430 253.5,-2412 29.5,-2412"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2412 29.5,-2430 253.5,-2430 253.5,-2412 29.5,-2412"></polygon>
+<text text-anchor="start" x="32.5" y="-2418" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;splitreads VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2394 29.5,-2412 253.5,-2412 253.5,-2394 29.5,-2394"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2394 29.5,-2412 253.5,-2412 253.5,-2394 29.5,-2394"></polygon>
+<text text-anchor="start" x="32.5" y="-2400" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;spanpairs VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2376 29.5,-2394 253.5,-2394 253.5,-2376 29.5,-2376"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2376 29.5,-2394 253.5,-2394 253.5,-2376 29.5,-2376"></polygon>
+<text text-anchor="start" x="32.5" y="-2382" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lof FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2358 29.5,-2376 253.5,-2376 253.5,-2358 29.5,-2358"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2358 29.5,-2376 253.5,-2376 253.5,-2358 29.5,-2358"></polygon>
+<text text-anchor="start" x="32.5" y="-2364" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;dkfzbias VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2340 29.5,-2358 253.5,-2358 253.5,-2340 29.5,-2340"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2340 29.5,-2358 253.5,-2358 253.5,-2340 29.5,-2340"></polygon>
+<text text-anchor="start" x="32.5" y="-2346" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;n_samples INTEGER</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2322 29.5,-2340 253.5,-2340 253.5,-2322 29.5,-2322"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2322 29.5,-2340 253.5,-2340 253.5,-2322 29.5,-2322"></polygon>
+<text text-anchor="start" x="32.5" y="-2328" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;n_var INTEGER</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2304 29.5,-2322 253.5,-2322 253.5,-2304 29.5,-2304"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2304 29.5,-2322 253.5,-2322 253.5,-2304 29.5,-2304"></polygon>
+<text text-anchor="start" x="32.5" y="-2310" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;pcnt_sample FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2286 29.5,-2304 253.5,-2304 253.5,-2286 29.5,-2286"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2286 29.5,-2304 253.5,-2304 253.5,-2286 29.5,-2286"></polygon>
+<text text-anchor="start" x="32.5" y="-2292" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ave_af FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2268 29.5,-2286 253.5,-2286 253.5,-2268 29.5,-2268"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2268 29.5,-2286 253.5,-2286 253.5,-2268 29.5,-2268"></polygon>
+<text text-anchor="start" x="32.5" y="-2274" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;pass VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2250 29.5,-2268 253.5,-2268 253.5,-2250 29.5,-2250"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2250 29.5,-2268 253.5,-2268 253.5,-2250 29.5,-2250"></polygon>
+<text text-anchor="start" x="32.5" y="-2256" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;var_type VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2232 29.5,-2250 253.5,-2250 253.5,-2232 29.5,-2232"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2232 29.5,-2250 253.5,-2250 253.5,-2232 29.5,-2232"></polygon>
+<text text-anchor="start" x="32.5" y="-2238" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;var_class VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2214 29.5,-2232 253.5,-2232 253.5,-2214 29.5,-2214"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2214 29.5,-2232 253.5,-2232 253.5,-2214 29.5,-2214"></polygon>
+<text text-anchor="start" x="32.5" y="-2220" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;significance VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2196 29.5,-2214 253.5,-2214 253.5,-2196 29.5,-2196"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2196 29.5,-2214 253.5,-2214 253.5,-2196 29.5,-2196"></polygon>
+<text text-anchor="start" x="32.5" y="-2202" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;reason VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2178 29.5,-2196 253.5,-2196 253.5,-2178 29.5,-2178"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2178 29.5,-2196 253.5,-2196 253.5,-2178 29.5,-2178"></polygon>
+<text text-anchor="start" x="32.5" y="-2184" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;incidentalome VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2160 29.5,-2178 253.5,-2178 253.5,-2160 29.5,-2160"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2160 29.5,-2178 253.5,-2178 253.5,-2160 29.5,-2160"></polygon>
+<text text-anchor="start" x="32.5" y="-2166" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;actionability_tier VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2142 29.5,-2160 253.5,-2160 253.5,-2142 29.5,-2142"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2142 29.5,-2160 253.5,-2160 253.5,-2142 29.5,-2142"></polygon>
+<text text-anchor="start" x="32.5" y="-2148" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;actionability_type VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2124 29.5,-2142 253.5,-2142 253.5,-2124 29.5,-2124"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2124 29.5,-2142 253.5,-2142 253.5,-2124 29.5,-2124"></polygon>
+<text text-anchor="start" x="32.5" y="-2130" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;annotation_index VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2106 29.5,-2124 253.5,-2124 253.5,-2106 29.5,-2106"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2106 29.5,-2124 253.5,-2124 253.5,-2106 29.5,-2106"></polygon>
+<text text-anchor="start" x="32.5" y="-2112" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;chip_category VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2088 29.5,-2106 253.5,-2106 253.5,-2088 29.5,-2088"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2088 29.5,-2106 253.5,-2106 253.5,-2088 29.5,-2088"></polygon>
+<text text-anchor="start" x="32.5" y="-2094" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;cosmic_id VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2070 29.5,-2088 253.5,-2088 253.5,-2070 29.5,-2070"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2070 29.5,-2088 253.5,-2088 253.5,-2070 29.5,-2070"></polygon>
+<text text-anchor="start" x="32.5" y="-2076" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;dbsnp_rsids VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2052 29.5,-2070 253.5,-2070 253.5,-2052 29.5,-2052"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2052 29.5,-2070 253.5,-2070 253.5,-2052 29.5,-2052"></polygon>
+<text text-anchor="start" x="32.5" y="-2058" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;gene_region_codon VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2034 29.5,-2052 253.5,-2052 253.5,-2034 29.5,-2034"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2034 29.5,-2052 253.5,-2052 253.5,-2034 29.5,-2034"></polygon>
+<text text-anchor="start" x="32.5" y="-2040" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;genome_build VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-2016 29.5,-2034 253.5,-2034 253.5,-2016 29.5,-2016"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-2016 29.5,-2034 253.5,-2034 253.5,-2016 29.5,-2016"></polygon>
+<text text-anchor="start" x="32.5" y="-2022" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;genomic_coordinates_build VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1998 29.5,-2016 253.5,-2016 253.5,-1998 29.5,-1998"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1998 29.5,-2016 253.5,-2016 253.5,-1998 29.5,-1998"></polygon>
+<text text-anchor="start" x="32.22" y="-2004" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;genomic_coordinates_chromosome VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1980 29.5,-1998 253.5,-1998 253.5,-1980 29.5,-1980"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1980 29.5,-1998 253.5,-1998 253.5,-1980 29.5,-1980"></polygon>
+<text text-anchor="start" x="32.5" y="-1986" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;genomic_coordinates_start VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1962 29.5,-1980 253.5,-1980 253.5,-1962 29.5,-1962"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1962 29.5,-1980 253.5,-1980 253.5,-1962 29.5,-1962"></polygon>
+<text text-anchor="start" x="32.5" y="-1968" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;genomic_coordinates_stop VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1944 29.5,-1962 253.5,-1962 253.5,-1944 29.5,-1944"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1944 29.5,-1962 253.5,-1962 253.5,-1944 29.5,-1944"></polygon>
+<text text-anchor="start" x="32.5" y="-1950" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;gnomad_af VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1926 29.5,-1944 253.5,-1944 253.5,-1926 29.5,-1926"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1926 29.5,-1944 253.5,-1944 253.5,-1926 29.5,-1926"></polygon>
+<text text-anchor="start" x="32.5" y="-1932" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;gnomad_af_popmax VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1908 29.5,-1926 253.5,-1926 253.5,-1908 29.5,-1908"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1908 29.5,-1926 253.5,-1926 253.5,-1908 29.5,-1908"></polygon>
+<text text-anchor="start" x="32.5" y="-1914" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;gnomad_popmax VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1890 29.5,-1908 253.5,-1908 253.5,-1890 29.5,-1890"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1890 29.5,-1908 253.5,-1908 253.5,-1890 29.5,-1890"></polygon>
+<text text-anchor="start" x="32.5" y="-1896" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;incidentalome_list VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1872 29.5,-1890 253.5,-1890 253.5,-1872 29.5,-1872"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1872 29.5,-1890 253.5,-1890 253.5,-1872 29.5,-1872"></polygon>
+<text text-anchor="start" x="32.5" y="-1878" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;is_actionable VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1854 29.5,-1872 253.5,-1872 253.5,-1854 29.5,-1854"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1854 29.5,-1872 253.5,-1872 253.5,-1854 29.5,-1854"></polygon>
+<text text-anchor="start" x="32.5" y="-1860" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;max_af VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1836 29.5,-1854 253.5,-1854 253.5,-1836 29.5,-1836"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1836 29.5,-1854 253.5,-1854 253.5,-1836 29.5,-1836"></polygon>
+<text text-anchor="start" x="32.5" y="-1842" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;msi_unit_length VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1818 29.5,-1836 253.5,-1836 253.5,-1818 29.5,-1818"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1818 29.5,-1836 253.5,-1836 253.5,-1818 29.5,-1818"></polygon>
+<text text-anchor="start" x="32.5" y="-1824" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nuc_change_len VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1800 29.5,-1818 253.5,-1818 253.5,-1800 29.5,-1800"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1800 29.5,-1818 253.5,-1818 253.5,-1800 29.5,-1800"></polygon>
+<text text-anchor="start" x="32.5" y="-1806" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;poa_panels VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1782 29.5,-1800 253.5,-1800 253.5,-1782 29.5,-1782"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1782 29.5,-1800 253.5,-1800 253.5,-1782 29.5,-1782"></polygon>
+<text text-anchor="start" x="32.5" y="-1788" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;poa_panels_prevalence VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1764 29.5,-1782 253.5,-1782 253.5,-1764 29.5,-1764"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1764 29.5,-1782 253.5,-1782 253.5,-1764 29.5,-1764"></polygon>
+<text text-anchor="start" x="32.5" y="-1770" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;poa_panels_prevalence_sureselect VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1746 29.5,-1764 253.5,-1764 253.5,-1746 29.5,-1746"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1746 29.5,-1764 253.5,-1764 253.5,-1746 29.5,-1746"></polygon>
+<text text-anchor="start" x="32.5" y="-1752" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;pon_panels VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1728 29.5,-1746 253.5,-1746 253.5,-1728 29.5,-1728"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1728 29.5,-1746 253.5,-1746 253.5,-1728 29.5,-1728"></polygon>
+<text text-anchor="start" x="32.5" y="-1734" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;protein_change VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1710 29.5,-1728 253.5,-1728 253.5,-1710 29.5,-1710"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1710 29.5,-1728 253.5,-1728 253.5,-1710 29.5,-1710"></polygon>
+<text text-anchor="start" x="32.5" y="-1716" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;reason_list VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1692 29.5,-1710 253.5,-1710 253.5,-1692 29.5,-1692"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1692 29.5,-1710 253.5,-1710 253.5,-1692 29.5,-1692"></polygon>
+<text text-anchor="start" x="32.5" y="-1698" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;regex_az_lof VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1674 29.5,-1692 253.5,-1692 253.5,-1674 29.5,-1674"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1674 29.5,-1692 253.5,-1692 253.5,-1674 29.5,-1674"></polygon>
+<text text-anchor="start" x="32.5" y="-1680" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sample_genome VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1656 29.5,-1674 253.5,-1674 253.5,-1656 29.5,-1656"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1656 29.5,-1674 253.5,-1674 253.5,-1656 29.5,-1656"></polygon>
+<text text-anchor="start" x="32.5" y="-1662" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;significance_list VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1638 29.5,-1656 253.5,-1656 253.5,-1638 29.5,-1638"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1638 29.5,-1656 253.5,-1656 253.5,-1638 29.5,-1638"></polygon>
+<text text-anchor="start" x="32.5" y="-1644" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;source_filename VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1620 29.5,-1638 253.5,-1638 253.5,-1620 29.5,-1620"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1620 29.5,-1638 253.5,-1638 253.5,-1620 29.5,-1620"></polygon>
+<text text-anchor="start" x="32.5" y="-1626" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;source_project VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1602 29.5,-1620 253.5,-1620 253.5,-1602 29.5,-1602"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1602 29.5,-1620 253.5,-1620 253.5,-1602 29.5,-1602"></polygon>
+<text text-anchor="start" x="32.5" y="-1608" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;variant VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1584 29.5,-1602 253.5,-1602 253.5,-1584 29.5,-1584"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1584 29.5,-1602 253.5,-1602 253.5,-1584 29.5,-1584"></polygon>
+<text text-anchor="start" x="32.5" y="-1590" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;artifacts VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1566 29.5,-1584 253.5,-1584 253.5,-1566 29.5,-1566"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1566 29.5,-1584 253.5,-1584 253.5,-1566 29.5,-1566"></polygon>
+<text text-anchor="start" x="32.5" y="-1572" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;dbsnpbuildid VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1548 29.5,-1566 253.5,-1566 253.5,-1548 29.5,-1548"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1548 29.5,-1566 253.5,-1566 253.5,-1548 29.5,-1548"></polygon>
+<text text-anchor="start" x="32.5" y="-1554" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;variant_end INTEGER</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1530 29.5,-1548 253.5,-1548 253.5,-1530 29.5,-1530"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1530 29.5,-1548 253.5,-1548 253.5,-1530 29.5,-1530"></polygon>
+<text text-anchor="start" x="32.5" y="-1536" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;exac_af FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1512 29.5,-1530 253.5,-1530 253.5,-1512 29.5,-1512"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1512 29.5,-1530 253.5,-1530 253.5,-1512 29.5,-1512"></polygon>
+<text text-anchor="start" x="32.5" y="-1518" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;variant_filter VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1494 29.5,-1512 253.5,-1512 253.5,-1494 29.5,-1494"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1494 29.5,-1512 253.5,-1512 253.5,-1494 29.5,-1494"></polygon>
+<text text-anchor="start" x="32.5" y="-1500" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;reject VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1476 29.5,-1494 253.5,-1494 253.5,-1476 29.5,-1476"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1476 29.5,-1494 253.5,-1494 253.5,-1476 29.5,-1476"></polygon>
+<text text-anchor="start" x="32.5" y="-1482" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;variant_status VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="29.5,-1458 29.5,-1476 253.5,-1476 253.5,-1458 29.5,-1458"></polygon>
+<polygon fill="none" stroke="white" points="29.5,-1458 29.5,-1476 253.5,-1476 253.5,-1458 29.5,-1458"></polygon>
+<text text-anchor="start" x="32.5" y="-1464" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;strand_bias_support VARCHAR</text>
+</g>
+<!-- vardict&#45;&gt;sample -->
+<g id="edge10" class="edge">
+<title>vardict:sample_name-&gt;sample:sample_name</title>
+<path fill="none" stroke="#5ea54a" d="M254.5,-3249C311.88,-3249 263.27,-1259 312.98,-1115.19"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="315.9,-1117.13 319,-1107 310.26,-1112.99 315.9,-1117.13"></polygon>
+</g>
+<!-- vardict&#45;&gt;sample -->
+<g id="edge11" class="edge">
+<title>vardict:model_name-&gt;sample:model_name</title>
+<path fill="none" stroke="#5ea54a" d="M254.5,-3231C311.88,-3231 263.27,-1241 312.98,-1097.19"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="315.9,-1099.13 319,-1089 310.26,-1094.99 315.9,-1099.13"></polygon>
+</g>
+<!-- tpm_prm -->
+<g id="node8" class="node">
+<title>tpm_prm</title>
+<polygon fill="#232d95" stroke="transparent" points="63.5,-1422 63.5,-1440 219.5,-1440 219.5,-1422 63.5,-1422"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1422 63.5,-1440 219.5,-1440 219.5,-1422 63.5,-1422"></polygon>
+<text text-anchor="start" x="66.5" y="-1429" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">tpm_prm</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1404 63.5,-1422 219.5,-1422 219.5,-1404 63.5,-1404"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1404 63.5,-1422 219.5,-1422 219.5,-1404 63.5,-1404"></polygon>
+<text text-anchor="start" x="66.5" y="-1411" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="81.78" y="-1411" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="88.78" y="-1411" font-family="opensans" font-size="10.00" fill="white"> id CHAR(55</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1386 63.5,-1404 219.5,-1404 219.5,-1386 63.5,-1386"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1386 63.5,-1404 219.5,-1404 219.5,-1386 63.5,-1386"></polygon>
+<text text-anchor="start" x="66.5" y="-1393" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="81.78" y="-1393" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="88.78" y="-1393" font-family="opensans" font-size="10.00" fill="white"> sample_name CHAR(50)</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1368 63.5,-1386 219.5,-1386 219.5,-1368 63.5,-1368"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1368 63.5,-1386 219.5,-1386 219.5,-1368 63.5,-1368"></polygon>
+<text text-anchor="start" x="66.5" y="-1374" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;transition VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1350 63.5,-1368 219.5,-1368 219.5,-1350 63.5,-1350"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1350 63.5,-1368 219.5,-1368 219.5,-1350 63.5,-1350"></polygon>
+<text text-anchor="start" x="66.5" y="-1356" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;peptide VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1332 63.5,-1350 219.5,-1350 219.5,-1332 63.5,-1332"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1332 63.5,-1350 219.5,-1350 219.5,-1332 63.5,-1332"></polygon>
+<text text-anchor="start" x="66.5" y="-1338" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;peptide_curation BOOLEAN</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1314 63.5,-1332 219.5,-1332 219.5,-1314 63.5,-1314"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1314 63.5,-1332 219.5,-1332 219.5,-1314 63.5,-1314"></polygon>
+<text text-anchor="start" x="66.5" y="-1320" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;preferred VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1296 63.5,-1314 219.5,-1314 219.5,-1296 63.5,-1296"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1296 63.5,-1314 219.5,-1314 219.5,-1296 63.5,-1296"></polygon>
+<text text-anchor="start" x="66.5" y="-1302" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;hugo_gene VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1278 63.5,-1296 219.5,-1296 219.5,-1278 63.5,-1278"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1278 63.5,-1296 219.5,-1296 219.5,-1278 63.5,-1278"></polygon>
+<text text-anchor="start" x="66.5" y="-1284" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;conc FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1260 63.5,-1278 219.5,-1278 219.5,-1260 63.5,-1260"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1260 63.5,-1278 219.5,-1278 219.5,-1260 63.5,-1260"></polygon>
+<text text-anchor="start" x="66.5" y="-1266" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lloq FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1242 63.5,-1260 219.5,-1260 219.5,-1242 63.5,-1242"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1242 63.5,-1260 219.5,-1260 219.5,-1242 63.5,-1242"></polygon>
+<text text-anchor="start" x="66.5" y="-1248" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uniprot_id VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1224 63.5,-1242 219.5,-1242 219.5,-1224 63.5,-1224"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1224 63.5,-1242 219.5,-1242 219.5,-1224 63.5,-1224"></polygon>
+<text text-anchor="start" x="66.09" y="-1230" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;collection_method VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1206 63.5,-1224 219.5,-1224 219.5,-1206 63.5,-1206"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1206 63.5,-1224 219.5,-1224 219.5,-1206 63.5,-1206"></polygon>
+<text text-anchor="start" x="66.5" y="-1212" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;date_of_digestion DATE</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1188 63.5,-1206 219.5,-1206 219.5,-1188 63.5,-1188"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1188 63.5,-1206 219.5,-1206 219.5,-1188 63.5,-1188"></polygon>
+<text text-anchor="start" x="66.5" y="-1194" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;histology_id VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1170 63.5,-1188 219.5,-1188 219.5,-1170 63.5,-1170"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1170 63.5,-1188 219.5,-1188 219.5,-1170 63.5,-1170"></polygon>
+<text text-anchor="start" x="66.5" y="-1176" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tissue_format VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1152 63.5,-1170 219.5,-1170 219.5,-1152 63.5,-1152"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1152 63.5,-1170 219.5,-1170 219.5,-1152 63.5,-1152"></polygon>
+<text text-anchor="start" x="66.5" y="-1158" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;micro_bca FLOAT</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1134 63.5,-1152 219.5,-1152 219.5,-1134 63.5,-1134"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1134 63.5,-1152 219.5,-1152 219.5,-1134 63.5,-1134"></polygon>
+<text text-anchor="start" x="66.5" y="-1140" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;project VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1116 63.5,-1134 219.5,-1134 219.5,-1116 63.5,-1116"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1116 63.5,-1134 219.5,-1134 219.5,-1116 63.5,-1116"></polygon>
+<text text-anchor="start" x="66.5" y="-1122" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;source VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1098 63.5,-1116 219.5,-1116 219.5,-1098 63.5,-1098"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1098 63.5,-1116 219.5,-1116 219.5,-1098 63.5,-1098"></polygon>
+<text text-anchor="start" x="66.5" y="-1104" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;panel VARCHAR</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1080 63.5,-1098 219.5,-1098 219.5,-1080 63.5,-1080"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1080 63.5,-1098 219.5,-1098 219.5,-1080 63.5,-1080"></polygon>
+<text text-anchor="start" x="66.5" y="-1087" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="81.78" y="-1087" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="88.78" y="-1087" font-family="opensans" font-size="10.00" fill="white"> model_name VARCHAR(50)</text>
+<polygon fill="#404040" stroke="transparent" points="63.5,-1062 63.5,-1080 219.5,-1080 219.5,-1062 63.5,-1062"></polygon>
+<polygon fill="none" stroke="white" points="63.5,-1062 63.5,-1080 219.5,-1080 219.5,-1062 63.5,-1062"></polygon>
+<text text-anchor="start" x="66.5" y="-1068" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;indication VARCHAR</text>
+</g>
+<!-- tpm_prm&#45;&gt;sample -->
+<g id="edge12" class="edge">
+<title>tpm_prm:sample_name-&gt;sample:sample_name</title>
+<path fill="none" stroke="#5ea54a" d="M220.5,-1395C352.21,-1395 192.58,-1121.99 308.93,-1107.59"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="309.22,-1111.08 319,-1107 308.81,-1104.09 309.22,-1111.08"></polygon>
+</g>
+<!-- tpm_prm&#45;&gt;sample -->
+<g id="edge13" class="edge">
+<title>tpm_prm:model_name-&gt;sample:model_name</title>
+<path fill="none" stroke="#5ea54a" d="M220.5,-1089C260.69,-1089 273.21,-1089 308.85,-1089"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="309,-1092.5 319,-1089 309,-1085.5 309,-1092.5"></polygon>
+</g>
+</g>
+</svg>
