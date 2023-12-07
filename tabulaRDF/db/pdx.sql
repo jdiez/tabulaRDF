@@ -75,8 +75,8 @@ CREATE TABLE model(
     treatment_history VARCHAR(255),
     );
 
-DROP TABLE IF EXISTS sample;
-CREATE TABLE sample(
+DROP TABLE IF EXISTS biosample;
+CREATE TABLE biosample(
     id CHAR(55) PRIMARY KEY,
     sample_name CHAR(55) UNIQUE NOT NULL,
     model_name CHAR(55),
@@ -114,8 +114,8 @@ CREATE TABLE rna_sample_lab_qc(
     az_data_qc_reason az_data_qc_reason,
     remediation remediation,
     jira_ticket_url VARCHAR(60),
-    FOREIGN KEY (sample_name) REFERENCES sample(sample_name),
-    FOREIGN KEY (sample_biotype) REFERENCES sample(sample_biotype)
+    FOREIGN KEY (sample_name) REFERENCES biosample(sample_name),
+    FOREIGN KEY (sample_biotype) REFERENCES biosample(sample_biotype)
 
     );
 
@@ -141,8 +141,8 @@ CREATE TABLE dna_sample_lab_qc(
     az_data_qc_reason az_data_qc_reason,
     remediation remediation,
     jira_ticket_url VARCHAR(60),
-    FOREIGN KEY (sample_name) REFERENCES sample(sample_name),
-    FOREIGN KEY (sample_biotype) REFERENCES sample(sample_biotype)
+    FOREIGN KEY (sample_name) REFERENCES biosample(sample_name),
+    FOREIGN KEY (sample_biotype) REFERENCES biosample(sample_biotype)
     );
 
 DROP TABLE IF EXISTS tp_sample_lab_qc;
@@ -159,8 +159,8 @@ CREATE TABLE tp_sample_lab_qc(
     az_data_qc lab_qc,
     az_data_qc_reason az_data_qc_reason,
     remediation remediation,
-    FOREIGN KEY (sample_name) REFERENCES sample(sample_name),
-    FOREIGN KEY (sample_biotype) REFERENCES sample(sample_biotype)
+    FOREIGN KEY (sample_name) REFERENCES biosample(sample_name),
+    FOREIGN KEY (sample_biotype) REFERENCES biosample(sample_biotype)
     );
 
 DROP TABLE IF EXISTS seq2c;
@@ -178,8 +178,8 @@ CREATE TABLE seq2c(
     log_ratio DOUBLE,
     significance significance,
     variant_type variant_type,
-    FOREIGN KEY (sample_name) REFERENCES sample(sample_name),
-    FOREIGN KEY (model_name) REFERENCES sample(model_name),
+    FOREIGN KEY (sample_name) REFERENCES biosample(sample_name),
+    FOREIGN KEY (model_name) REFERENCES biosample(model_name),
     );
 
 
@@ -286,8 +286,8 @@ CREATE TABLE vardict(
     reject VARCHAR,
     variant_status VARCHAR,
     strand_bias_support VARCHAR,
-    FOREIGN KEY (sample_name) REFERENCES sample(sample_name),
-    FOREIGN KEY (model_name) REFERENCES sample(model_name)
+    FOREIGN KEY (sample_name) REFERENCES biosample(sample_name),
+    FOREIGN KEY (model_name) REFERENCES biosample(model_name)
     );
 
 DROP TABLE IF EXISTS tpm_prm;
@@ -312,15 +312,7 @@ CREATE TABLE tpm_prm(
     panel VARCHAR,
     model_name VARCHAR(50),
     indication VARCHAR,
-    FOREIGN KEY (sample_name) REFERENCES sample(sample_name),
-    FOREIGN KEY (model_name) REFERENCES sample(model_name)
+    FOREIGN KEY (sample_name) REFERENCES biosample(sample_name),
+    FOREIGN KEY (model_name) REFERENCES biosample(model_name)
     );
--- CREATE TABLE pdx.wes_seq2c();
 
--- CREATE TABLE pdx.wes_vardict();
-
--- CREATE TABLE pdx.wes_cnv();
-
--- CREATE TABLE pdx.rna_tpm();
-
--- CREATE TABLE pdx.tpx_quantitation();
