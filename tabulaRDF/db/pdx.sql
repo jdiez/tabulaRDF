@@ -79,23 +79,21 @@ DROP TABLE IF EXISTS biosample;
 CREATE TABLE biosample(
     id CHAR(55) PRIMARY KEY,
     sample_name CHAR(55) UNIQUE NOT NULL,
-    model_name CHAR(55),
+    model_name CHAR(55) REFERENCES model(model_name),
     mouse_id VARCHAR(30) NOT NULL,
     tumor_passage VARCHAR(3) NOT NULL,
     analysis_type analysis_type,
     batch INTEGER NOT NULL,
     tumor_sample_source VARCHAR(255) NOT NULL,
     sample_biotype biotype,
-    project_name VARCHAR(255),
-    FOREIGN KEY (model_name) REFERENCES model(model_name),
-    KEY (model_name, sample_biotype)
+    project_name VARCHAR(255)
     );
 
 DROP TABLE IF EXISTS rna_sample_lab_qc;
 CREATE TABLE rna_sample_lab_qc(
     id CHAR(55) PRIMARY KEY,
-    sample_name UNIQUE CHAR(55),
-    sample_biotype CHAR(3) CHECK (sample_biotype = 'RNA'),
+    sample_name CHAR(55) REFERENCES biosample(sample_name) UNIQUE,
+    sample_biotype CHAR(3) REFERENCES biosample(sample_biotype) CHECK (sample_biotype = 'RNA'),
     az_concentration FLOAT,
     az_volume FLOAT,
     az_total_amount FLOAT,
@@ -113,17 +111,14 @@ CREATE TABLE rna_sample_lab_qc(
     az_data_qc lab_qc,
     az_data_qc_reason az_data_qc_reason,
     remediation remediation,
-    jira_ticket_url VARCHAR(60),
-    FOREIGN KEY (sample_name) REFERENCES biosample(sample_name),
-    FOREIGN KEY (sample_biotype) REFERENCES biosample(sample_biotype)
-
+    jira_ticket_url VARCHAR(60)
     );
 
 DROP TABLE IF EXISTS dna_sample_lab_qc;
 CREATE TABLE dna_sample_lab_qc(
     id CHAR(55) PRIMARY KEY,
-    sample_name UNIQUE CHAR(55),
-    sample_biotype CHAR(3) CHECK (sample_biotype = 'DNA'),
+    sample_name CHAR(55) UNIQUE,
+    sample_biotype CHAR CHECK (sample_biotype = 'DNA'),
     az_concentration FLOAT,
     az_volume FLOAT,
     az_total_amount FLOAT,
@@ -148,7 +143,7 @@ CREATE TABLE dna_sample_lab_qc(
 DROP TABLE IF EXISTS tp_sample_lab_qc;
 CREATE TABLE tp_sample_lab_qc(
     id CHAR(55) PRIMARY KEY,
-    sample_name UNIQUE CHAR(55),
+    sample_name CHAR(55) UNIQUE,
     sample_biotype CHAR(3) CHECK (sample_biotype = 'TPX'),
     az_concentration FLOAT,
     micro_bca FLOAT,
@@ -166,8 +161,8 @@ CREATE TABLE tp_sample_lab_qc(
 DROP TABLE IF EXISTS seq2c;
 CREATE TABLE seq2c(
     id CHAR(55) PRIMARY KEY,
-    sample_name CHAR(55) NOT NULL,
-    model_name CHAR(55) NOT NULL,
+    sample_name VARCHAR REFERENCES biosample(sample_name),
+    model_name VARCHAR REFERENCES biosample(model_name),
     chromosome VARCHAR(5) NOT NULL,
     coordinate VARCHAR(30) NOT NULL,
     cnv VARCHAR(30) NOT NULL,
@@ -175,11 +170,9 @@ CREATE TABLE seq2c(
     cnv_type VARCHAR(30) NOT NULL,
     copy_number VARCHAR(30) NOT NULL,
     gene VARCHAR(30) NOT NULL,
-    log_ratio DOUBLE,
+    log_ratio FLOAT,
     significance significance,
-    variant_type variant_type,
-    FOREIGN KEY (sample_name) REFERENCES biosample(sample_name),
-    FOREIGN KEY (model_name) REFERENCES biosample(model_name),
+    variant_type variant_type
     );
 
 
