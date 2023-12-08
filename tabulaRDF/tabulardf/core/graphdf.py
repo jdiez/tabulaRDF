@@ -207,16 +207,17 @@ class FactoryRDFstatements:
         attrs = {k: v for k, v in self.attributes.items() if k != self.class_col}
         # Multiple columns?
         if self.multisep in self.class_col:
-            assert self.class_dict["create_uuid"] is True, ValueError(f"{self.class_col} is not unique.")
+            # assert self.class_dict["create_uuid"] is True, ValueError(f"{self.class_col} is not unique.")
             vals = self.class_col.split(self.multisep)
             mcol = set([record[i] for i in vals])
             res = "_".join(mcol)
             klass_uri = self._get_classuri(res)
+            res_1 = self._class_definition_statement(klass_uri)
         else:
             klass_uri = self._get_classuri(record[self.class_col])
             # yield self._class_definition_statement(record[self.class_col])
             res_1 = self._class_definition_statement(klass_uri)
-            yield res_1
+        yield res_1
         for _, value in attrs.items():
             # yield self._predicate_definition_statement(record[self.class_col], value, record[value['colname']])
             if value.get("create_uuid"):
