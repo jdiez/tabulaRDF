@@ -1,0 +1,151 @@
+id: https://w3id.org/pdx/proteomics
+name: proteomics
+prefixes:
+  linkml: https://w3id.org/linkml/
+  base: https://w3id.org/examples/az/proteomics/
+  proteomics: https://w3id.org/examples/az/proteomics/
+  pdx: https://w3id.org/examples/az/pdx/
+  up: http://purl.uniprot.org/core/
+  protein: http://purl.uniprot.org/uniprot/
+  gene: http://purl.uniprot.org/gene/
+  rdf:  http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  skos: http://www.w3.org/2004/02/skos/core#
+  xsd: http://www.w3.org/2001/XMLSchema#
+default_curi_maps:
+  - semweb_context
+imports:
+  - linkml:types
+default_prefix: proteomics
+default_range: xsd:string
+
+classes:
+  Protein:
+    description:
+    subject_uri: protein
+    class_uri: up:Protein
+    colname: UniProtID
+    create_uuid: false
+    attributes:
+      gene:
+        colname: HUGO GENE
+        domain: up:encodedBy
+        range: gene
+  Model:
+    description: PDX model description.
+    subject_uri: proteomics:Model#
+    class_uri: pdx:Model
+    colname: Model
+    create_uuid: true
+    attributes:
+      model_id:
+        domain: pdx:hasModelId
+        range: xsd:string
+        colname: Model
+      indication:
+        domain: pdx:hasIndication
+        range: xsd:string
+        colname: Indication
+      source:
+        domain: pdx:hasSource
+        range: xsd:string
+        colname: Source
+      project:
+        domain: pdx:hasProject
+        range: xsd:string
+        colname: Project
+  Sample:
+    description: Sample PDX description.
+    class_uri: pdx:Sample
+    colname: Sample
+    subject_uri: proteomics:Sample#
+    create_uuid: false
+    attributes:
+      sample_id:
+        domain: pdx:hasSampleId
+        range:  xsd:string
+        colname: Sample
+      model_id:
+        domain: pdx:hasModelId
+        range: proteomics:Model#
+        colname: Model
+        create_uuid: true
+      histology_id:
+        domain: pdx:hasHistologyId
+        range: xsd:string
+        colname: Histology ID
+      micro_bca:
+        domain: pdx:hasMicroBca
+        range: xsd:float
+        colname: microBCA (ug)
+      tissue_format:
+        domain: pdx:hasTissueFormat
+        range: xsd:string
+        colname: Tissue Format
+      collection:
+        domain: pdx:hasCollection
+        range: xsd:string
+        colname: Collection
+      date_of_digestion:
+        domain: pdx:hasDateOfDigestion
+        range: xsd:date
+        colname: Date of Digestion
+  Peptide:
+    description: Peptide Proteomics description.
+    class_uri: proteomics:Peptide
+    colname: Peptide
+    subject_uri: proteomics:Peptide#
+    create_uuid: true
+    attributes:
+      sequence:
+        domain: pdx:hasSequence
+        range: xsd:string
+        colname: Peptide
+      protein_id:
+        domain: pdx:hasProteinId
+        range: protein
+        colname: UniProtID
+  Transition:
+    description: Transition Proteomics description.
+    class_uri: proteomics:Transition
+    colname: Transition
+    subject_uri: proteomics:Transition/
+    create_uuid: true
+    attributes:
+      transition_id:
+        domain: pdx:hasTransitionId
+        range: xsd:string
+        colname: Transition
+      peptide_id:
+        domain: pdx:hasPeptideId
+        range: proteomics:Peptide#
+        colname: Peptide
+        create_uuid: true
+      preferred:
+        domain: pdx:isPreferred
+        range: xsd:bool
+        colname: Preferred
+  Measurement:
+    description: Measurement Proteomics description.
+    class_uri: :proteomics#Measure
+    colname: Transition;Sample
+    subject_uri: proteomics:Measurement/
+    create_uuid: true
+    attributes:
+      transition_id:
+        domain: pdx:hasTransition
+        range: proteomics:Transition/
+        colname: Transition
+        create_uuid: true
+      sample_id:
+        domain: pdx:hasSampleId
+        range: proteomics:Sample#
+        colname: Sample
+      concentration:
+        domain: pdx:hasConcentration
+        range: xsd:float
+        colname: Conc (amol/ug)
+      lloq:
+        domain: pdx:hasLloq
+        range: xsd:int
+        colname: LLOQ (amol/ug)
