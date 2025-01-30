@@ -1,0 +1,154 @@
+nodes:
+-   name: Pizza
+    properties:
+    -   name: hasCaloricContent
+        iri: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#hasCaloricContent
+        source:
+        - Pizza
+        target:
+        - int
+-   name: PizzaBase
+    properties: null
+-   name: PizzaTopping
+    properties: null
+-   name: Spiciness
+    properties: null
+-   name: Customer
+    properties:
+    -   name: hasDiscount
+        iri: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#hasDiscount
+        source:
+        - Customer
+        target:
+        - float
+    -   name: numberOfPizzasPurchased
+        iri: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#numberOfPizzasPurchased
+        source:
+        - Customer
+        target:
+        - int
+-   name: Person
+    properties:
+    -   name: hasPhone
+        iri: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#hasPhone
+        source:
+        - Person
+        target:
+        - str
+-   name: Employee
+    properties:
+    -   name: ssn
+        iri: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#ssn
+        source:
+        - Employee
+        target:
+        - str
+-   name: AmericanaHotPizza
+    properties: null
+-   name: NamedPizza
+    properties: null
+-   name: JalapenoPepperTopping
+    properties: null
+-   name: MozzarellaTopping
+    properties: null
+-   name: PepperoniTopping
+    properties: null
+-   name: TomatoTopping
+    properties: null
+-   name: AmericanaPizza
+    properties: null
+-   name: AnchovyTopping
+    properties: null
+-   name: SeafoodTopping
+    properties: null
+-   name: CaperTopping
+    properties: null
+-   name: VegetableTopping
+    properties: null
+-   name: CheeseTopping
+    properties: null
+-   name: CheesyPizza
+    properties: null
+-   name: DeepPanBase
+    properties: null
+-   name: ThinAndCrispyBase
+    properties: null
+-   name: GreenPepperTopping
+    properties: null
+-   name: PepperTopping
+    properties: null
+-   name: HamTopping
+    properties: null
+-   name: MeatTopping
+    properties: null
+-   name: HighCaloriePizza
+    properties: null
+-   name: HotVeggiePizza
+    properties: null
+-   name: VegetarianPizza
+    properties: null
+-   name: InterestingPizza
+    properties: null
+-   name: LowCaloriePizza
+    properties: null
+-   name: MargheritaPizza
+    properties: null
+-   name: MediumVeggiePizza
+    properties: null
+-   name: ParmesanTopping
+    properties: null
+-   name: MushroomTopping
+    properties: null
+-   name: OliveTopping
+    properties: null
+-   name: PrawnTopping
+    properties: null
+-   name: RedPepperTopping
+    properties: null
+-   name: SalamiTopping
+    properties: null
+-   name: SohoPizza
+    properties: null
+-   name: SpicyBeefTopping
+    properties: null
+-   name: SpicyPizza
+    properties: null
+-   name: TunaTopping
+    properties: null
+relationships:
+-   name: hasBase
+    iri: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#hasBase
+    source:
+    - Pizza
+    target:
+    - PizzaBase
+-   name: hasSpiciness
+    iri: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#hasSpiciness
+    source:
+    - PizzaTopping
+    target:
+    - Spiciness
+-   name: hasSpicinessPreference
+    iri: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#hasSpicinessPreference
+    source:
+    - Customer
+    target:
+    - Spiciness
+-   name: hasTopping
+    iri: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#hasTopping
+    source:
+    - Pizza
+    target:
+    - PizzaTopping
+-   name: isSpicierThan
+    iri: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#isSpicierThan
+    source:
+    - Spiciness
+    target:
+    - Spiciness
+-   name: purchasedPizza
+    iri: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#purchasedPizza
+    source:
+    - Customer
+    target:
+    - Pizza
