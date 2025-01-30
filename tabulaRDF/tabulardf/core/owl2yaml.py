@@ -1,10 +1,14 @@
+"""It turns owl ontolgie into yaml file using owlready2"""
 
 import enum
 from itertools import chain, cycle, groupby
 from collections import namedtuple
 from operator import itemgetter
+from pathlib import Path
+from typing import Annotated
 import yaml
 
+import typer
 from owlready2 import get_ontology
 
 
@@ -30,7 +34,8 @@ class PropertyType(str, enum.Enum):
 class OntologyAnalyzer:
     """AI is creating summary for 
     """
-    def __init__(self, ontology_file: str, 
+    def __init__(self,
+                 ontology_file: Path, 
                  parser: callable=lambda x: get_ontology(x).load(),
                  property_data_nt: namedtuple = property_data,
                  class_data_nt: namedtuple = class_data) -> None:
@@ -44,7 +49,7 @@ class OntologyAnalyzer:
         """
         self.class_data_nt = class_data_nt
         self.property_data_nt = property_data_nt
-        self.ontology = parser(ontology_file)
+        self.ontology = parser(str(ontology_file))
         self.classes = sorted({c.name: c for c in self.ontology.classes()})
         self.individuals = sorted({i.name: i for i in self.ontology.individuals()})
         self.individuals_different = sorted({i.name: i for i in self.ontology.different_individuals()})
@@ -97,6 +102,15 @@ class OntologyAnalyzer:
             case _:
                 raise ValueError("Invalid property type")
 
+    def to_yaml(self) -> str:
+        """
+        AI is creating summary for to_yaml
+
+        Returns:
+            str: [description]
+        """
+        return yaml.dump(self(), default_flow_style=False, sort_keys=False, indent=4, width=80)
+
     def __call__(self, *args, **kwds) -> dict:
         """AI is creating summary for __call__
 
@@ -110,19 +124,22 @@ class OntologyAnalyzer:
         return {'nodes': nodes,'relationships': list(relationships.values())}
 
 
-def get_wrapp(ontology_file: str="PizzaTutorialWithDataV2.owl") -> dict:
-    """AI is creating summary for get_wrapp
+def main(
+    input_owl: Annotated[Path, typer.Option(exists=True, dir_okay=False, file_okay=True, help="OWL file to parse.")],
 
-    Args:
-        ontology_file (str, optional): [description]. Defaults to "PizzaTutorialWithDataV2.owl".
-
-    Returns:
-        dict: [description]
+    output_yaml: Annotated[
+        Path, typer.Option(exists=False, dir_okay=True, file_okay=True, help="Output file to write YAML.")
+    ]):
     """
-    onto=OntologyAnalyzer(ontology_file)()
-    print(yaml.dump(onto, default_flow_style=False, sort_keys=False, indent=4, width=80))
-    return onto
+    Takes a OWL ontology and serializes it to a YAML.
+    """
+
+    import sys
+    onto = OntologyAnalyzer(input_owl)
+    with open(output_yaml, "w") as ofh:
+            ofh.write(onto.to_yaml())
+    sys.exit("Graph created successfully.")
 
 
 if __name__ == "__main__":
-    get_wrapp()
+    typer.run(main)
