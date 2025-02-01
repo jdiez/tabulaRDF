@@ -10,6 +10,7 @@ import yaml
 
 import typer
 from owlready2 import get_ontology
+from owlready2.entity import ThingClass, Restriction
 
 
 # property_data = namedtuple('PropertyData', ['name', 'iri', 'domain', 'range'])
@@ -101,6 +102,34 @@ class OntologyAnalyzer:
                                                for op in getattr(self.ontology, name)() if len(op.domain) > 0}
             case _:
                 raise ValueError("Invalid property type")
+    
+    def get_class_hierarchy(self) -> dict[str, dict[str, list[str] | str] | None]:
+        """AI is creating summary for get_class_hierarchy
+
+        Returns:
+            dict[str, list[str]]: [description]
+        """
+        classes = dict()
+        for c in self.ontology.classes():
+            if c.is_a is not None:
+                classes[c.__name__] = {'parents': [], 'restrictions': []}
+                for a in c.is_a:
+                    match a:
+                        case ThingClass():
+                            classes[c.__name__]['parents'].append(a.name)
+                        case Restriction():
+                            classes[c.__name__]['restrictions'].append(str(a))
+                        case _:
+                            print(c, a)
+        return classes
+
+    def get_instance_hierarchy(self) -> dict[str, dict[str, list[str] | str] | None]:
+        """AI is creating summary for get_class_hierarchy
+
+        Returns:
+            dict[str, list[str]]: [description]
+        """
+        return {c.name: list(map(lambda x: getattr(x, 'name', None), c.is_a)) for c in self.ontology.individuals()}
 
     def to_yaml(self) -> str:
         """
@@ -121,7 +150,7 @@ class OntologyAnalyzer:
         nodes = [{'name': k, 'properties': data_properties.get(k, None)} 
                  for k, v in self.get_properties_attributes(PropertyType.CLASS).items()]
         relationships = self.get_properties_attributes(PropertyType.OBJECT_PROPERTIES)
-        return {'nodes': nodes,'relationships': list(relationships.values())}
+        return {'nodes': nodes, 'relationships': list(relationships.values()), 'hierarchy': {'classes': self.get_class_hierarchy(), 'individuals': self.get_instance_hierarchy()}}
 
 
 def main(
@@ -133,7 +162,6 @@ def main(
     """
     Takes a OWL ontology and serializes it to a YAML.
     """
-
     import sys
     onto = OntologyAnalyzer(input_owl)
     with open(output_yaml, "w") as ofh:
