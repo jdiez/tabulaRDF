@@ -120,6 +120,7 @@ class OntologyAnalyzer:
                         case Restriction():
                             classes[c.__name__]['restrictions'].append(str(a))
                         case _:
+                            # need to work on it.
                             print(c, a)
         return classes
 
