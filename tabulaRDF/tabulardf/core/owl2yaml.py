@@ -129,7 +129,7 @@ class OntologyAnalyzer:
         Returns:
             dict[str, list[str]]: [description]
         """
-        return {c.name: list(map(lambda x: getattr(x, 'name', None), c.is_a)) for c in self.ontology.individuals()}
+        return {c.name: {'parents':list(map(lambda x: getattr(x, 'name', None), c.is_a))} for c in self.ontology.individuals()}
 
     def to_yaml(self) -> str:
         """
