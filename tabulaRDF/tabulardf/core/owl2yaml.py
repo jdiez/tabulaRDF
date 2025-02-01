@@ -143,7 +143,9 @@ class OntologyAnalyzer:
 
     def __call__(self, *args, **kwds) -> dict:
         """AI is creating summary for __call__
-
+            Hierarchy contains relationships and their attributes. It's outside for better 
+            visualization until agreed on structure.
+            It should be moved to relantionships, the type of data structure needs agreement.
         Returns:
             dict: [description]
         """
@@ -151,7 +153,11 @@ class OntologyAnalyzer:
         nodes = [{'name': k, 'properties': data_properties.get(k, None)} 
                  for k, v in self.get_properties_attributes(PropertyType.CLASS).items()]
         relationships = self.get_properties_attributes(PropertyType.OBJECT_PROPERTIES)
-        return {'nodes': nodes, 'relationships': list(relationships.values()), 'hierarchy': {'classes': self.get_class_hierarchy(), 'individuals': self.get_instance_hierarchy()}}
+        return {'nodes': nodes, 
+                'relationships': list(relationships.values()), 
+                'hierarchy': {'classes': self.get_class_hierarchy(), 
+                              'individuals': self.get_instance_hierarchy()}
+               }
 
 
 def main(
