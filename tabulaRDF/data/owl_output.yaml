@@ -360,78 +360,116 @@ hierarchy:
             restrictions: []
     individuals:
         Mild:
-        - Spiciness
+            parents:
+            - Spiciness
         Medium:
-        - Thing
+            parents:
+            - Thing
         Hot:
-        - Thing
+            parents:
+            - Thing
         AmericanaHotPizza1:
-        - AmericanaHotPizza
+            parents:
+            - AmericanaHotPizza
         AmericanaHotPizza2:
-        - AmericanaHotPizza
+            parents:
+            - AmericanaHotPizza
         AmericanaHotPizza3:
-        - AmericanaHotPizza
+            parents:
+            - AmericanaHotPizza
         AmericanaPizza1:
-        - AmericanaPizza
+            parents:
+            - AmericanaPizza
         AmericanaPizza2:
-        - AmericanaPizza
+            parents:
+            - AmericanaPizza
         CheesyPizza1:
-        - CheesyPizza
+            parents:
+            - CheesyPizza
         Chef:
-        - Employee
+            parents:
+            - Employee
         ChicagoAmericanaHotPizza1:
-        - AmericanaHotPizza
+            parents:
+            - AmericanaHotPizza
         CustomPizza1:
-        - Pizza
+            parents:
+            - Pizza
         OliveTopping1:
-        - OliveTopping
+            parents:
+            - OliveTopping
         SpicyBeefTopping1:
-        - SpicyBeefTopping
+            parents:
+            - SpicyBeefTopping
         CustomPizza2:
-        - Pizza
+            parents:
+            - Pizza
         GreenPepperTopping2:
-        - GreenPepperTopping
+            parents:
+            - GreenPepperTopping
         MushroomTopping2:
-        - MushroomTopping
+            parents:
+            - MushroomTopping
         Customer1:
-        - Customer
+            parents:
+            - Customer
         Customer10:
-        - Customer
+            parents:
+            - Customer
         Customer2:
-        - Customer
+            parents:
+            - Customer
         MargheritaPizza1:
-        - MargheritaPizza
+            parents:
+            - MargheritaPizza
         Customer3:
-        - Customer
+            parents:
+            - Customer
         MargheritaPizza2:
-        - MargheritaPizza
+            parents:
+            - MargheritaPizza
         SohoPizza1:
-        - SohoPizza
+            parents:
+            - SohoPizza
         Customer4:
-        - Customer
+            parents:
+            - Customer
         HotVeggiePizza1:
-        - HotVeggiePizza
+            parents:
+            - HotVeggiePizza
         Customer5:
-        - Customer
+            parents:
+            - Customer
         MediumVeggiePizza1:
-        - MediumVeggiePizza
+            parents:
+            - MediumVeggiePizza
         Customer6:
-        - Customer
+            parents:
+            - Customer
         Customer7:
-        - Customer
+            parents:
+            - Customer
         Customer8:
-        - Customer
+            parents:
+            - Customer
         Customer9:
-        - Customer
+            parents:
+            - Customer
         HotVeggiePizza3:
-        - HotVeggiePizza
+            parents:
+            - HotVeggiePizza
         HotVeggiePizza2:
-        - HotVeggiePizza
+            parents:
+            - HotVeggiePizza
         Manager:
-        - Employee
+            parents:
+            - Employee
         SohoPizza2:
-        - SohoPizza
+            parents:
+            - SohoPizza
         Waiter1:
-        - Employee
+            parents:
+            - Employee
         Waiter2:
-        - Employee
+            parents:
+            - Employee
