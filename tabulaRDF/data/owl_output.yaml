@@ -152,3 +152,286 @@ relationships:
     - Customer
     target:
     - Pizza
+hierarchy:
+    classes:
+        Pizza:
+            parents:
+            - Thing
+            restrictions:
+            - PizzaTutorialWithDataV2.hasBase.some(PizzaTutorialWithDataV2.PizzaBase)
+            - PizzaTutorialWithDataV2.hasCaloricContent.some(<class 'int'>)
+        PizzaBase:
+            parents:
+            - Thing
+            restrictions: []
+        PizzaTopping:
+            parents:
+            - Thing
+            restrictions: []
+        Spiciness:
+            parents:
+            - Thing
+            restrictions: []
+        Customer:
+            parents:
+            - Thing
+            restrictions: []
+        Person:
+            parents:
+            - Thing
+            restrictions: []
+        Employee:
+            parents:
+            - Thing
+            restrictions: []
+        AmericanaHotPizza:
+            parents:
+            - NamedPizza
+            restrictions:
+            - PizzaTutorialWithDataV2.hasTopping.some(PizzaTutorialWithDataV2.JalapenoPepperTopping)
+            - PizzaTutorialWithDataV2.hasTopping.some(PizzaTutorialWithDataV2.MozzarellaTopping)
+            - PizzaTutorialWithDataV2.hasTopping.some(PizzaTutorialWithDataV2.PepperoniTopping)
+            - PizzaTutorialWithDataV2.hasTopping.some(PizzaTutorialWithDataV2.TomatoTopping)
+        NamedPizza:
+            parents:
+            - Pizza
+            restrictions: []
+        JalapenoPepperTopping:
+            parents:
+            - PepperTopping
+            restrictions:
+            - PizzaTutorialWithDataV2.hasSpiciness.value(PizzaTutorialWithDataV2.Hot)
+        MozzarellaTopping:
+            parents:
+            - CheeseTopping
+            restrictions: []
+        PepperoniTopping:
+            parents:
+            - MeatTopping
+            restrictions:
+            - PizzaTutorialWithDataV2.hasSpiciness.value(PizzaTutorialWithDataV2.Medium)
+        TomatoTopping:
+            parents:
+            - VegetableTopping
+            restrictions: []
+        AmericanaPizza:
+            parents:
+            - NamedPizza
+            restrictions:
+            - PizzaTutorialWithDataV2.hasTopping.some(PizzaTutorialWithDataV2.MozzarellaTopping)
+            - PizzaTutorialWithDataV2.hasTopping.some(PizzaTutorialWithDataV2.PepperoniTopping)
+            - PizzaTutorialWithDataV2.hasTopping.some(PizzaTutorialWithDataV2.TomatoTopping)
+        AnchovyTopping:
+            parents:
+            - SeafoodTopping
+            restrictions: []
+        SeafoodTopping:
+            parents:
+            - PizzaTopping
+            restrictions:
+            - PizzaTutorialWithDataV2.hasSpiciness.value(PizzaTutorialWithDataV2.Mild)
+        CaperTopping:
+            parents:
+            - VegetableTopping
+            restrictions:
+            - PizzaTutorialWithDataV2.hasSpiciness.value(PizzaTutorialWithDataV2.Mild)
+        VegetableTopping:
+            parents:
+            - PizzaTopping
+            restrictions: []
+        CheeseTopping:
+            parents:
+            - PizzaTopping
+            restrictions:
+            - PizzaTutorialWithDataV2.hasSpiciness.value(PizzaTutorialWithDataV2.Mild)
+        CheesyPizza:
+            parents:
+            - Thing
+            restrictions: []
+        DeepPanBase:
+            parents:
+            - PizzaBase
+            restrictions: []
+        ThinAndCrispyBase:
+            parents:
+            - PizzaBase
+            restrictions: []
+        GreenPepperTopping:
+            parents:
+            - PepperTopping
+            restrictions:
+            - PizzaTutorialWithDataV2.hasSpiciness.value(PizzaTutorialWithDataV2.Medium)
+        PepperTopping:
+            parents:
+            - VegetableTopping
+            restrictions: []
+        HamTopping:
+            parents:
+            - MeatTopping
+            restrictions:
+            - PizzaTutorialWithDataV2.hasSpiciness.value(PizzaTutorialWithDataV2.Mild)
+        MeatTopping:
+            parents:
+            - PizzaTopping
+            restrictions: []
+        HighCaloriePizza:
+            parents:
+            - Thing
+            restrictions: []
+        HotVeggiePizza:
+            parents:
+            - Thing
+            restrictions: []
+        VegetarianPizza:
+            parents:
+            - Thing
+            restrictions: []
+        InterestingPizza:
+            parents:
+            - Thing
+            restrictions: []
+        LowCaloriePizza:
+            parents:
+            - Thing
+            restrictions: []
+        MargheritaPizza:
+            parents:
+            - NamedPizza
+            restrictions:
+            - PizzaTutorialWithDataV2.hasTopping.some(PizzaTutorialWithDataV2.MozzarellaTopping)
+            - PizzaTutorialWithDataV2.hasTopping.some(PizzaTutorialWithDataV2.TomatoTopping)
+            - PizzaTutorialWithDataV2.hasTopping.only(PizzaTutorialWithDataV2.MozzarellaTopping
+                | PizzaTutorialWithDataV2.TomatoTopping)
+        MediumVeggiePizza:
+            parents:
+            - Thing
+            restrictions: []
+        ParmesanTopping:
+            parents:
+            - CheeseTopping
+            restrictions: []
+        MushroomTopping:
+            parents:
+            - VegetableTopping
+            restrictions:
+            - PizzaTutorialWithDataV2.hasSpiciness.value(PizzaTutorialWithDataV2.Mild)
+        OliveTopping:
+            parents:
+            - VegetableTopping
+            restrictions:
+            - PizzaTutorialWithDataV2.hasSpiciness.value(PizzaTutorialWithDataV2.Mild)
+        PrawnTopping:
+            parents:
+            - SeafoodTopping
+            restrictions: []
+        RedPepperTopping:
+            parents:
+            - PepperTopping
+            restrictions:
+            - PizzaTutorialWithDataV2.hasSpiciness.value(PizzaTutorialWithDataV2.Hot)
+        SalamiTopping:
+            parents:
+            - MeatTopping
+            restrictions:
+            - PizzaTutorialWithDataV2.hasSpiciness.value(PizzaTutorialWithDataV2.Medium)
+        SohoPizza:
+            parents:
+            - NamedPizza
+            restrictions:
+            - PizzaTutorialWithDataV2.hasTopping.some(PizzaTutorialWithDataV2.MozzarellaTopping)
+            - PizzaTutorialWithDataV2.hasTopping.some(PizzaTutorialWithDataV2.OliveTopping)
+            - PizzaTutorialWithDataV2.hasTopping.some(PizzaTutorialWithDataV2.ParmesanTopping)
+            - PizzaTutorialWithDataV2.hasTopping.some(PizzaTutorialWithDataV2.TomatoTopping)
+            - PizzaTutorialWithDataV2.hasTopping.only(PizzaTutorialWithDataV2.MozzarellaTopping
+                | PizzaTutorialWithDataV2.OliveTopping | PizzaTutorialWithDataV2.ParmesanTopping
+                | PizzaTutorialWithDataV2.TomatoTopping)
+        SpicyBeefTopping:
+            parents:
+            - MeatTopping
+            restrictions:
+            - PizzaTutorialWithDataV2.hasSpiciness.value(PizzaTutorialWithDataV2.Hot)
+        SpicyPizza:
+            parents:
+            - Thing
+            restrictions: []
+        TunaTopping:
+            parents:
+            - SeafoodTopping
+            restrictions: []
+    individuals:
+        Mild:
+        - Spiciness
+        Medium:
+        - Thing
+        Hot:
+        - Thing
+        AmericanaHotPizza1:
+        - AmericanaHotPizza
+        AmericanaHotPizza2:
+        - AmericanaHotPizza
+        AmericanaHotPizza3:
+        - AmericanaHotPizza
+        AmericanaPizza1:
+        - AmericanaPizza
+        AmericanaPizza2:
+        - AmericanaPizza
+        CheesyPizza1:
+        - CheesyPizza
+        Chef:
+        - Employee
+        ChicagoAmericanaHotPizza1:
+        - AmericanaHotPizza
+        CustomPizza1:
+        - Pizza
+        OliveTopping1:
+        - OliveTopping
+        SpicyBeefTopping1:
+        - SpicyBeefTopping
+        CustomPizza2:
+        - Pizza
+        GreenPepperTopping2:
+        - GreenPepperTopping
+        MushroomTopping2:
+        - MushroomTopping
+        Customer1:
+        - Customer
+        Customer10:
+        - Customer
+        Customer2:
+        - Customer
+        MargheritaPizza1:
+        - MargheritaPizza
+        Customer3:
+        - Customer
+        MargheritaPizza2:
+        - MargheritaPizza
+        SohoPizza1:
+        - SohoPizza
+        Customer4:
+        - Customer
+        HotVeggiePizza1:
+        - HotVeggiePizza
+        Customer5:
+        - Customer
+        MediumVeggiePizza1:
+        - MediumVeggiePizza
+        Customer6:
+        - Customer
+        Customer7:
+        - Customer
+        Customer8:
+        - Customer
+        Customer9:
+        - Customer
+        HotVeggiePizza3:
+        - HotVeggiePizza
+        HotVeggiePizza2:
+        - HotVeggiePizza
+        Manager:
+        - Employee
+        SohoPizza2:
+        - SohoPizza
+        Waiter1:
+        - Employee
+        Waiter2:
+        - Employee
