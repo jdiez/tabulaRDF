@@ -8,9 +8,10 @@ from pathlib import Path
 from typing import Annotated
 import yaml
 
-import typer
+from loguru import logger
 from owlready2 import get_ontology
 from owlready2.entity import ThingClass, Restriction
+import typer
 
 
 # property_data = namedtuple('PropertyData', ['name', 'iri', 'domain', 'range'])
@@ -112,7 +113,7 @@ class OntologyAnalyzer:
         classes = dict()
         for c in self.ontology.classes():
             if c.is_a is not None:
-                classes[c.__name__] = {'parents': [], 'restrictions': []}
+                classes[c.__name__] = {'ctype': 'class', 'parents': [], 'restrictions': [], 'debug': []}
                 for a in c.is_a:
                     match a:
                         case ThingClass():
@@ -120,8 +121,9 @@ class OntologyAnalyzer:
                         case Restriction():
                             classes[c.__name__]['restrictions'].append(str(a))
                         case _:
-                            # need to work on it.
-                            print(c, a)
+                            classes[c.__name__]['debug'].append(str(a))
+                            case={'child': str(c), 'parent': str(a)}
+                            logger.info(f"No compliant case to debug: {case}")
         return classes
 
     def get_instance_hierarchy(self) -> dict[str, dict[str, list[str] | str] | None]:
@@ -130,7 +132,10 @@ class OntologyAnalyzer:
         Returns:
             dict[str, list[str]]: [description]
         """
-        return {c.name: {'parents':list(map(lambda x: getattr(x, 'name', None), c.is_a))} for c in self.ontology.individuals()}
+        return {c.name: {'ctype': 'individual',
+                         'parents':list(map(lambda x: getattr(x, 'name', None), c.is_a)),
+                         'restrictions': None,
+                         'debug': None} for c in self.ontology.individuals()}
 
     def to_yaml(self) -> str:
         """
@@ -143,9 +148,7 @@ class OntologyAnalyzer:
 
     def __call__(self, *args, **kwds) -> dict:
         """AI is creating summary for __call__
-            Hierarchy contains relationships and their attributes. It's outside for better 
-            visualization until agreed on structure.
-            It should be moved to relantionships, the type of data structure needs agreement.
+
         Returns:
             dict: [description]
         """
@@ -153,12 +156,10 @@ class OntologyAnalyzer:
         nodes = [{'name': k, 'properties': data_properties.get(k, None)} 
                  for k, v in self.get_properties_attributes(PropertyType.CLASS).items()]
         relationships = self.get_properties_attributes(PropertyType.OBJECT_PROPERTIES)
-        return {'nodes': nodes, 
-                'relationships': list(relationships.values()), 
-                'hierarchy': {'classes': self.get_class_hierarchy(), 
-                              'individuals': self.get_instance_hierarchy()}
-               }
-
+        entities = self.get_class_hierarchy()
+        instances = self.get_instance_hierarchy()
+        entities.update(instances)
+        return {'nodes': nodes, 'relationships': list(relationships.values()), 'hierarchy': entities}
 
 def main(
     input_owl: Annotated[Path, typer.Option(exists=True, dir_okay=False, file_okay=True, help="OWL file to parse.")],
@@ -169,11 +170,13 @@ def main(
     """
     Takes a OWL ontology and serializes it to a YAML.
     """
-    import sys
+    logger.info(f"Parsing OWL file: {input_owl}")
+    
     onto = OntologyAnalyzer(input_owl)
     with open(output_yaml, "w") as ofh:
+            logger.info(f"Writing YAML to: {output_yaml}")
             ofh.write(onto.to_yaml())
-    sys.exit("Graph created successfully.")
+    logger.info("Graph created successfully.")
 
 
 if __name__ == "__main__":
